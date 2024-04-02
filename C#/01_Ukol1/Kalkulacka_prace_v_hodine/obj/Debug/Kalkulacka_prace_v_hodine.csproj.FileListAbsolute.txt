@@ -1,0 +1,7 @@
+C:\Users\Mnova\OneDrive - SPS-CL\Programování\C#\Kalkulacka_prace_v_hodine\Kalkulacka_prace_v_hodine\obj\Debug\Kalkulacka_prace_v_hodine.csproj.AssemblyReference.cache
+C:\Users\Mnova\OneDrive - SPS-CL\Programování\C#\Kalkulacka_prace_v_hodine\Kalkulacka_prace_v_hodine\obj\Debug\Kalkulacka_prace_v_hodine.csproj.CoreCompileInputs.cache
+C:\Users\Mnova\OneDrive - SPS-CL\Programování\C#\Kalkulacka_prace_v_hodine\Kalkulacka_prace_v_hodine\bin\Debug\Kalkulacka_prace_v_hodine.exe.config
+C:\Users\Mnova\OneDrive - SPS-CL\Programování\C#\Kalkulacka_prace_v_hodine\Kalkulacka_prace_v_hodine\bin\Debug\Kalkulacka_prace_v_hodine.exe
+C:\Users\Mnova\OneDrive - SPS-CL\Programování\C#\Kalkulacka_prace_v_hodine\Kalkulacka_prace_v_hodine\bin\Debug\Kalkulacka_prace_v_hodine.pdb
+C:\Users\Mnova\OneDrive - SPS-CL\Programování\C#\Kalkulacka_prace_v_hodine\Kalkulacka_prace_v_hodine\obj\Debug\Kalkulacka_prace_v_hodine.exe
+C:\Users\Mnova\OneDrive - SPS-CL\Programování\C#\Kalkulacka_prace_v_hodine\Kalkulacka_prace_v_hodine\obj\Debug\Kalkulacka_prace_v_hodine.pdb

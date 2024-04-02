@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulář</h1>
+    <form action="/uloz-uzivatele" method="post">
+        <input id="Jmeno" type="text" name="Jméno" placeholder="Jméno" required>
+        <input id="Prijimeni" type="text" name="Přijímení" placeholder="Přijímení" required>
+        <input type="submit" value="Poslat">
+    </form>
+    <input type="button" value="poslat2" onclick="poslat()">
+    <script>
+        async function poslat() {
+            let data = await fetch("/uloz-uzivatele",
+                {
+                    method: "post",
+                    headers: {
+                        "content-type": "application/json"
+                    },
+                    body: JSON.stringify(
+                        {
+                            jmeno: document.getElementById("Jmeno").value,
+                            prijimeni: document.getElementById("Prijimeni").value
+                        }
+                    )
+                }
+            )
+        }
+    </script>
+    <input type="button" value="zobraz" onclick="zobrazUzivatele()">
+    <script>
+        async function zobrazUzivatele() {
+            try {
+                const response = await fetch("/zobraz-vsechny-osoby");
+                const data = await response.json();
+                    if (data.length > 0) {
+                        let allPersons = "";
+                        data.forEach(person => {
+                            allPersons += `${person.jmeno} ${person.prijimeni}\n`;
+                        });
+                        alert("Všechny osoby v databázi:\n" + allPersons);
+                    } else {
+                        alert("V databázi nejsou žádné osoby.");
+                    }
+            } catch (error) {
+                console.error(error);
+            }
+        }
+    </script>
+</body>
+</html>

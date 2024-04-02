@@ -1,0 +1,7 @@
+C:\Users\Mnova\OneDrive - SPS-CL\Programování\C#\práce1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\Mnova\OneDrive - SPS-CL\Programování\C#\práce1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\Mnova\OneDrive - SPS-CL\Programování\C#\práce1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\Mnova\OneDrive - SPS-CL\Programování\C#\práce1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+C:\Users\Mnova\OneDrive - SPS-CL\Programování\C#\práce1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\Mnova\OneDrive - SPS-CL\Programování\C#\práce1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\Mnova\OneDrive - SPS-CL\Programování\C#\práce1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
