@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Ukol2")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("ConsoleApp1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b8d0333809a12961eab39ebfd98bc9a5202cdd7")]
-[assembly: System.Reflection.AssemblyProductAttribute("Ukol2")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Ukol2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+255a94ad8774738d4c06759e05633a3b3d383366")]
+[assembly: System.Reflection.AssemblyProductAttribute("ConsoleApp1")]
+[assembly: System.Reflection.AssemblyTitleAttribute("ConsoleApp1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Vygenerované třídou WriteCodeFragment nástroje MSBuild
