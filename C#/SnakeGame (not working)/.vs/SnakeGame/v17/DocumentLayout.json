@@ -1,0 +1,60 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mnova\\Desktop\\SnakeGame\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6152B1E8-E973-40CE-9320-8446D42F03D7}|SnakeGame\\SnakeGame.csproj|c:\\users\\mnova\\desktop\\snakegame\\snakegame\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6152B1E8-E973-40CE-9320-8446D42F03D7}|SnakeGame\\SnakeGame.csproj|solutionrelative:snakegame\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6152B1E8-E973-40CE-9320-8446D42F03D7}|SnakeGame\\SnakeGame.csproj|C:\\Users\\Mnova\\Desktop\\SnakeGame\\snakegame\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6152B1E8-E973-40CE-9320-8446D42F03D7}|SnakeGame\\SnakeGame.csproj|solutionrelative:snakegame\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Mnova\\Desktop\\SnakeGame\\SnakeGame\\Form1.cs",
+              "RelativeDocumentMoniker": "SnakeGame\\Form1.cs",
+              "ToolTip": "C:\\Users\\Mnova\\Desktop\\SnakeGame\\SnakeGame\\Form1.cs",
+              "RelativeToolTip": "SnakeGame\\Form1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T09:39:54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [N\u00E1vrh]",
+              "DocumentMoniker": "C:\\Users\\Mnova\\Desktop\\SnakeGame\\SnakeGame\\Form1.cs",
+              "RelativeDocumentMoniker": "SnakeGame\\Form1.cs",
+              "ToolTip": "C:\\Users\\Mnova\\Desktop\\SnakeGame\\SnakeGame\\Form1.cs [N\u00E1vrh]",
+              "RelativeToolTip": "SnakeGame\\Form1.cs [N\u00E1vrh]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T09:39:22.804Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
