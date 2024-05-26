@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Přehrávač muziky</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .player {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 50px;
+        }
+        .controls {
+            margin-top: 10px;
+        }
+        button {
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #3700b3;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="player">
+        <h1 id="songTitle">Aktuálně hraje: N/A</h1>
+        <audio id="audioPlayer" controls>
+            <source id="audioSource" src="" type="audio/mpeg">
+            Váš prohlížeč nepodporuje přehrávání audio souborů.
+        </audio>
+        <div class="controls">
+            <button onclick="playAudio()">Přehrát</button>
+            <button onclick="pauseAudio()">Pauza</button>
+            <button onclick="stopAudio()">Stop</button>
+        </div>
+    </div>
+    <ul id="playlist">
+        <% musicFiles.forEach(function(file) { %>
+            <li><a href="#" onclick="loadAudio('<%= file %>')"><%= file %></a></li>
+        <% }) %>
+    </ul>
+    
+    <script>
+        const audioPlayer = document.getElementById('audioPlayer');
+        const audioSource = document.getElementById('audioSource');
+    
+        function playAudio() {
+            audioPlayer.play();
+        }
+    
+        function pauseAudio() {
+            audioPlayer.pause();
+        }
+    
+        function stopAudio() {
+            audioPlayer.pause();
+            audioPlayer.currentTime = 0;
+        }
+    
+        function loadAudio(file) {
+            const songTitle = document.getElementById('songTitle');
+            audioSource.src = '/music/' + file;
+            audioPlayer.load();
+            fetchMetadata(file);
+            playAudio();
+            songTitle.innerText = 'Aktuálně hraje: ' + file;
+            currentIndex = playlist.indexOf(file);
+}
+
+    </script>
+    
+</body>
+</html>

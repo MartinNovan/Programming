@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "browser-id3-writer": "^6.1.0",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "music-metadata": "^7.14.0",
+    "node-id3": "^0.2.6"
+  }
+}
