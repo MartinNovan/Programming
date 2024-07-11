@@ -3,14 +3,14 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
-const PORT = 3000;
+const PORT = 5000;
 const musicDir = path.join(__dirname, 'music');
 
 // Nastavení EJS jako šablonovacího motoru
 app.set('view engine', 'ejs');
 
 // Statické soubory
-app.use(express.static(__dirname + '/public'));
+app.use('/views', express.static(path.join(__dirname, 'views')));
 
 // Obsluha statických souborů z adresáře music
 app.use('/music', express.static(musicDir));

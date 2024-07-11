@@ -1,0 +1,491 @@
+01: úvod html
+
+Co je HTML?
+    HTML je zkratka pro Hyper Text Markup Language
+    HTML je standardní značkovací jazyk pro vytváření webových stránek.
+    HTML popisuje strukturu webové stránky
+    HTML se skládá z řady prvků
+    Prvky HTML určují prohlížeči, jak má zobrazit obsah.
+    prvky HTML označují části obsahu, například "toto je nadpis", "toto je odstavec", "toto je odkaz" atd.
+    příklad:
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <title>Page Title</title>
+        </head>
+        <body>
+
+        <h1>This is a Heading</h1>
+        <p>This is a paragraph.</p>
+
+        </body>
+        </html>
+
+Vysvětlení příkladu:
+    Deklarace <!DOCTYPE html> definuje, že tento dokument je dokumentem HTML5.
+        Element <html> je kořenový element stránky HTML.
+        Element <head> obsahuje metainformace o stránce HTML
+        Element <title> určuje název stránky HTML (který se zobrazuje v titulkovém pruhu prohlížeče nebo v záložce stránky).
+        Element <body> definuje tělo dokumentu a je kontejnerem pro veškerý viditelný obsah, jako jsou nadpisy, odstavce, obrázky, hypertextové odkazy, tabulky, seznamy atd.
+        Element <h1> definuje velký nadpis
+        Element <p> definuje odstavec
+
+Co je to element HTML?
+    Element HTML je definován počáteční značkou, určitým obsahem a koncovou značkou:
+    příklad:
+        <tagname> Obsah patří sem... </tagname>
+
+Elementem HTML je vše od počáteční značky po koncovou značku:
+    příklad:
+        <h1>Můj první nadpis</h1>
+        <p>Můj první odstavec.</p>
+
+!Poznámka: Některé prvky HTML nemají žádný obsah (např. prvek <br>). Tyto elementy se nazývají prázdné elementy. Prázdné elementy nemají koncovou značku!
+
+02: základ HTML
+
+Dokumenty HTML:
+    Všechny dokumenty HTML musí začínat deklarací typu dokumentu: <!DOCTYPE html>.
+    Samotný dokument HTML začíná <html> a končí </html>.
+    Viditelná část dokumentu HTML se nachází mezi <body> a </body>.
+    příklad:
+        <!DOCTYPE html>
+        <html>
+        <body>
+
+        <h1>My First Heading</h1>
+        <p>My first paragraph.</p>
+
+        </body>
+        </html>
+
+Deklarace <!DOCTYPE>:
+    Deklarace <!DOCTYPE> představuje typ dokumentu a pomáhá prohlížečům správně zobrazit webové stránky.
+    Musí se objevit pouze jednou, a to v horní části stránky (před jakýmikoli značkami HTML).
+    Deklarace <!DOCTYPE> nerozlišuje velikost písmen.
+    Deklarace <!DOCTYPE> pro HTML5 je:
+        <!DOCTYPE html>
+
+Nadpisy HTML:
+    Nadpisy HTML se definují pomocí značek <h1> až <h6>.
+    <h1> definuje nejdůležitější nadpis. <h6> definuje nejméně důležitý nadpis: 
+    Příklad:
+        <h1>Toto je nadpis 1</h1>
+        <h2>Toto je nadpis 2</h2>
+        <h3>Toto je nadpis 3</h3>
+
+Odstavce HTML:
+    Odstavce HTML se definují pomocí značky <p>
+    Příklad:
+        <p>Toto je odstavec.</p>
+        <p>Toto je další odstavec.</p>
+
+Odkazy HTML:
+    Odkazy HTML se definují pomocí značky <a>
+    příklad:
+        <a href="https://www.w3schools.com">Toto je odkaz.</a>
+    Cíl odkazu je uveden v atributu href. 
+    Atributy slouží k poskytování dalších informací o prvcích HTML.
+
+Obrázky HTML:
+    Obrázky HTML se definují pomocí značky <img>.
+    Zdrojový soubor (src), alternativní text (alt), šířka a výška jsou uvedeny jako atributy.
+    příklad:
+        <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+
+
+03: Elementy HTML
+
+Elementem HTML je vše od počáteční značky po koncovou značku:
+    příklad:
+        <h1>Můj první nadpis</h1>
+        <p>Můj první odstavec.</p>
+
+!Poznámka: Některé prvky HTML nemají žádný obsah (např. prvek <br>). Tyto elementy se nazývají prázdné elementy. Prázdné elementy nemají koncovou značku!
+
+Vnořené prvky HTML:
+    Elementy HTML mohou být vnořené (to znamená, že elementy mohou obsahovat další elementy).
+    Všechny dokumenty HTML se skládají z vnořených prvků HTML.
+    Následující příklad obsahuje čtyři elementy HTML (<html>, <body>, <h1> a <p>):
+        <!DOCTYPE html>
+        <html>
+        <body>
+
+        <h1>My First Heading</h1>
+        <p>My first paragraph.</p>
+
+        </body>
+        </html>
+
+    Vysvětlení příkladu:
+        Element <html> je kořenový element a definuje celý dokument HTML.
+        Má počáteční značku <html> a koncovou značku </html>.
+        Uvnitř elementu <html> se pak nachází element <body>:
+            <body>.
+
+            <h1>Můj první nadpis</h1>
+            <p>Můj první odstavec.</p>
+
+            </body>
+
+        Element <body> definuje tělo dokumentu.
+        Má počáteční značku <body> a koncovou značku </body>.
+        Uvnitř elementu <body> se pak nacházejí další dva elementy: <h1> a <p>:
+            <h1>Můj první nadpis</h1>.
+            <p>Můj první odstavec.</p>
+
+        Element <h1> definuje nadpis.
+        Má počáteční značku <h1> a koncovou značku </h1>:
+            <h1>Můj první nadpis</h1>.
+
+        Element <p> definuje odstavec.
+        Má počáteční značku <p> a koncovou značku </p>:
+            <p>Můj první odstavec.</p>
+
+Prázdné prvky HTML:
+    Prvky HTML bez obsahu se nazývají prázdné prvky.
+    Značka <br> definuje zalomení řádku a je prázdným elementem bez uzavírací značky.
+    Příklad:
+        <p>Toto je odstavec <br> se zalomením řádku.</p>
+
+HTML nerozlišuje malá a velká písmena
+U značek HTML se nerozlišují velká a malá písmena: <P> znamená totéž co <p>.
+Norma HTML nevyžaduje malá písmena ve značkách, ale doporučujou se malá písmena v HTML
+Pro přísnější typy dokumentů, jako je XHTML, se vyžadují malá písmena.
+
+04: Atributy HTML
+
+Všechny prvky HTML mohou mít atributy
+Atributy poskytují další informace o prvcích
+Atributy jsou vždy uvedeny v počátečním tagu
+Atributy se obvykle vyskytují v párech jméno/hodnota, například: name="value"
+
+Atribut href:
+    The <a> tag definuje hypertextový odkaz. The href="href" atribut určuje adresu URL stránky, na kterou odkaz vede:
+    Příklad: 
+        <a href="https://www.w3schools.com">Navštivte W3Schools</a>
+
+Atribut src:
+    Značka <img> slouží k vložení obrázku do stránky HTML. The src atribut určuje cestu k obrázku, který se má zobrazit:
+    Příklad: 
+        <img src="img_girl.jpg">
+    Existují dva způsoby, jak zadat adresu URL v atributu src:
+        1. Absolutní adresa URL - odkazuje na externí obrázek, který je umístěn na jiné webové stránce. 
+        Příklad: 
+        src="https://www.w3schools.com/images/img_girl.jpg".
+    Poznámka: Externí obrázky mohou podléhat autorským právům. Pokud nezískáte povolení k jejich použití, můžete porušit zákony o autorských právech. Navíc externí obrázky nemůžete kontrolovat; mohou být náhle odstraněny nebo změněny.
+        2. Relativní adresa URL - Odkazuje na obrázek, který je umístěn na webových stránkách. Zde adresa URL neobsahuje název domény. Pokud adresa URL začíná bez lomítka, je relativní vůči aktuální stránce. 
+        Příklad: 
+        src="img_girl.jpg". 
+        Pokud adresa URL začíná lomítkem, bude relativní vůči doméně. 
+        Příklad: 
+        src="/images/img_girl.jpg".
+    Rada: Téměř vždy je lepší používat relativní adresy URL. Při změně domény se nezruší.
+
+Atribut alt:
+    Povinný atribut alt pro značku <img> určuje alternativní text pro obrázek, pokud obrázek z nějakého důvodu nelze zobrazit. 
+    Důvodem může být pomalé připojení, chyba v atributu src nebo pokud uživatel používá čtečku obrazovky.
+    Příklad: 
+        <img src="img_girl.jpg" alt="Girl with a jacket">
+
+Atribut style:
+    Atribut style slouží k přidání stylů do prvku, například barvy, písma, velikosti a dalších.
+    Příklad:
+        <p style="color:red;">Tento odstavec je červený.</p> 
+
+Atribut lang:
+    Uvnitř značky <html> byste vždy měli uvést atribut lang, který deklaruje jazyk webové stránky. Má to pomoci vyhledávačům a prohlížečům.
+    V následujícím příkladu je jako jazyk uvedena angličtina:
+        <!DOCTYPE html>
+        <html lang="cs">
+        <body>
+        ...
+        </body>
+        </html>
+    Kódy zemí lze také přidat ke kódu jazyka v atributu lang. První dva znaky tedy definují jazyk stránky HTML a poslední dva znaky definují zemi.
+    Následující příklad určuje jako jazyk angličtinu a jako zemi Spojené státy:
+        <!DOCTYPE html>
+        <html lang="en-US">
+        <body>
+        ...
+        </body>
+        </html>
+
+Atribut title:
+    Atribut title definuje některé další informace o prvku.
+    Hodnota atributu title se zobrazí jako nápověda při najetí myší na prvek:
+    Příklad:
+        <p title="Jsem tooltip">Toto je odstavec.</p>
+
+Tip: Vždy citujte hodnoty atributů
+Standard HTML nevyžaduje uvozovky kolem hodnot atributů.
+V HTML se však uvozovky doporučují a u přísnějších typů dokumentů, jako je XHTML, je vyžadují.
+
+Jednoduché nebo dvojité uvozovky?
+Dvojité uvozovky kolem hodnot atributů jsou v HTML nejběžnější, ale lze použít i jednoduché uvozovky.
+V některých situacích, kdy samotná hodnota atributu obsahuje dvojité uvozovky, je nutné použít jednoduché uvozovky:
+    <p title='John "ShotGun" Nelson'>
+
+Souhrn:
+    Všechny prvky HTML mohou mít atributy
+    Atribut href tagu <a> definuje URL adresu stránky kam odkaz míří
+    Atribut src tagu <img>definuje cestu obrázku, který má být zobrazen
+    Atributy width a height tagu <img> poskytují informace o velikosti obrázků
+    Atribut alt atributu <img> poskytuje alternativní text pro obrázek.
+    Atribut style slouží k přidání stylů k prvku, například barvy, písma, velikosti a dalších.
+    Atribut lang tagu <html> deklaruje jazyk webové stránky.
+    Atribut title definuje některé další informace o prvku.
+
+
+05: Nadpisy HTML
+Nadpisy HTML jsou nadpisy nebo podnadpisy, které chcete zobrazit na webové stránce.
+    Nadpisy HTML se definují pomocí značek <h1> až <h6>.
+    <h1> definuje nejdůležitější nadpis. <h6> definuje nejméně důležitý nadpis.
+    Příklad:
+        <h1>Nadpis 1</h1>
+        <h2>Záhlaví 2</h2>
+        <h3>Záhlaví 3</h3>
+        <h4>Záhlaví 4</h4>
+        <h5>Záhlaví 5</h5>
+        <h6>Záhlaví 6</h6>
+Poznámka: Prohlížeče automaticky přidávají před a za nadpis bílé místo (okraj).
+Nadpisy jsou důležité
+    Vyhledávače používají nadpisy k indexování struktury a obsahu vašich webových stránek.
+    Uživatelé často procházejí stránky podle nadpisů. Je důležité používat nadpisy, které ukazují strukturu dokumentu.
+    Pro hlavní nadpisy by se měly používat nadpisy <h1>, po nich nadpisy <h2>, pak méně důležité <h3> atd.
+Poznámka: Nadpisy HTML používejte pouze pro nadpisy. Nepoužívejte nadpisy k tomu, aby byl text VELKÝ nebo tučný.
+Větší nadpisy
+    Každý nadpis HTML má výchozí velikost. Velikost každého nadpisu však můžete určit pomocí atributu style a vlastnosti CSS font-size:
+    Příklad:
+        <h1 style="font-size:60px;">Nadpis 1</h1>
+
+
+06: Odstavce HTML
+Element <p> v jazyce HTML definuje odstavec.
+Odstavec začíná vždy na novém řádku a prohlížeče automaticky přidávají před a za odstavec bílé místo (okraj).
+Příklad
+    <p>Toto je odstavec.</p>
+    <p>Toto je další odstavec.</p>
+Zobrazení v jazyce HTML
+    Nemůžete si být jisti, jak se bude HTML zobrazovat.
+    Velké nebo malé obrazovky a změněné velikosti oken budou vytvářet různé výsledky.
+    U jazyka HTML nemůžete zobrazení změnit přidáním dalších mezer nebo dalších řádků v kódu HTML.
+    Prohlížeč při zobrazení stránky automaticky odstraní všechny mezery a řádky navíc.
+
+Horizontální pravidla HTML
+    Značka <hr> definuje tematický zlom na stránce HTML a nejčastěji se zobrazuje jako horizontální pravidlo.
+    Element <hr> se používá k oddělení obsahu (nebo k definování změny) na stránce HTML:
+    Příklad:
+        <h1>Toto je nadpis 1</h1>
+        <p>Toto je nějaký text.</p>
+        <hr>
+        <h2>Toto je nadpis 2</h2>
+        <p>Toto je nějaký další text.</p>
+        <hr>
+    Značka <hr> je prázdná značka, což znamená, že nemá žádný koncový tag.
+
+Zalomení řádků v jazyce HTML
+    Element <br> definuje zalomení řádku.
+    Pokud chcete vytvořit zlom řádku (nový řádek), aniž by začínal nový odstavec, použijte <br>:
+    Příklad:
+        <p>Toto je <br>odstavec <br>se zalomením řádku.</p>
+    Značka <br> je prázdná značka, což znamená, že nemá žádný koncový tag.
+
+Element <pre> jazyka HTML
+    Element HTML <pre> definuje předformátovaný text.
+    Text uvnitř elementu <pre> je zobrazen písmem s pevnou šířkou (obvykle Courier) a zachovává mezery i zalomení řádků:
+    Příklad:
+        <pre>
+        Moje Bonnie leží nad oceánem.
+
+        Moje Bonnie leží nad mořem.
+
+        Moje Bonnie leží nad oceánem.
+
+        Ach, přiveď mi zpátky mou Bonnie.
+        </pre>
+
+
+07: Styly HTML
+Atribut HTML style slouží k přidání stylů do prvku, například barvy, písma, velikosti a dalších.
+
+Atribut style HTML
+    Nastavení stylu prvku HTML lze provést pomocí atributu style.
+    Atribut HTML style má následující syntaxi:
+        <tagname style="property:value;">
+    Propety je vlastnost CSS. Value je hodnota CSS.
+
+Barva pozadí
+    Vlastnost CSS background-color definuje barvu pozadí prvku HTML.
+    Příklad:
+        Nastavte barvu pozadí stránky na práškově modrou:
+            <body style="background-color:powderblue;">
+            <h1>Toto je nadpis</h1>
+            <p>Toto je odstavec.</p>
+            </body>
+    Příklad:
+        Nastavení barvy pozadí pro dva různé prvky:
+            <body>
+            <h1 style="background-color:powderblue;">Toto je nadpis</h1>
+            <p style="background-color:tomato;">Toto je odstavec.</p>
+            </body>
+
+Barva textu
+    Vlastnost CSS color definuje barvu textu pro prvek HTML:
+    Příklad:
+        <h1 style="color:blue;">Toto je nadpis</h1>
+        <p style="color:red;">Toto je odstavec </p>
+Fonty
+    Vlastnost CSS font-family určuje písmo, které se použije pro prvek HTML:
+    Příklad:
+        <h1 style="font-family:verdana;">Toto je nadpis</h1>
+        <p style="font-family:courier;">Toto je odstavec.</p>
+Velikost textu
+    Vlastnost CSS font-size definuje velikost textu pro prvek HTML:
+    Příklad:
+        <h1 style="font-size:300%;">Toto je nadpis</h1>
+        <p style="font-size:160%;">Toto je odstavec.</p>
+
+Zarovnání textu
+    Vlastnost CSS text-align určuje horizontální zarovnání textu pro prvek HTML:
+    Příklad:
+        <h1 style="text-align:center;">Zastředěný nadpis</h1>
+        <p style="text-align:center;">Odstavec na střed.</p>
+
+Shrnutí
+    Použití atributu style pro stylování prvků HTML
+    Použití background-color pro barvu pozadí
+    Použití color pro barvy textu
+    Použijte font-family pro písma textu
+    Použijte font-size pro velikost textu
+    Použijte text-align pro zarovnání textu
+
+
+08: Formátování textu HTML
+HTML obsahuje několik prvků pro definování textu se zvláštním významem.
+
+Formátovací prvky HTML
+    Formátovací prvky byly navrženy pro zobrazení speciálních typů textu:
+        <b> - Tučný text
+        <strong> - Důležitý text
+        <i> - Kurzíva
+        <em> - Zvýrazněný text
+        <mark> - Označený text
+        <small> - Menší text
+        <del> - Odstraněný text
+        <ins> - Vložený text
+        <sub> - Dolní index
+        <sup> - Horní index
+
+HTML elementy <b> a <strong> 
+    Element <b> jazyka HTML definuje tučný text bez jakéhokoli dalšího významu.
+    Příklad:
+        <b>Tento text je tučný.</b>
+    Element HTML <strong> definuje text s výraznou důležitostí. 
+    Obsah uvnitř se obvykle zobrazuje tučně.
+    Příklad:
+        <strong>This text is important!</strong>
+
+HTML elementy <i> and <em>
+    Element HTML <i> definuje část textu v alternativním hlase nebo náladě. 
+    Obsah uvnitř je obvykle zobrazen kurzívou.
+    Tip: Značka <i> se často používá k označení odborného termínu, fráze z jiného jazyka, myšlenky, názvu lodi apod.
+    Příklad:
+        <i>Tenhle text je kurzívou.</i>
+    Element <em> jazyka HTML definuje zvýrazněný text. 
+    Obsah uvnitř se obvykle zobrazuje kurzívou.
+    Tip: Čtečka obrazovky vysloví slova v <em> s důrazem pomocí slovního zdůraznění.
+    Příklad:
+        <em>This text is emphasized</em>
+
+HTML element <small> 
+    Element HTML <small> definuje menší text.
+    Příklad:
+        <small>Toto je nějaký menší text.</small>
+
+Element HTML <mark>
+    Element HTML <mark> definuje text, který má být označen nebo zvýrazněn:
+    Příklad:
+        <p>Nezapomeňte dnes koupit <mark>mléko</mark>.</p>
+
+Element HTML <del>
+    Element HTML <del> definuje text, který byl z dokumentu odstraněn. 
+    Prohlížeče obvykle smazaný text přeškrtnou:
+    Příklad:
+        <p>Moje oblíbená barva je <del>modrá</del> červená.</p>
+
+Element <ins> jazyka HTML 
+    Element HTML <ins> definuje text, který byl vložen do dokumentu. 
+    Prohlížeče obvykle vložený text podtrhnou.
+    Příklad: 
+        <p>Moje oblíbená barva je <del>modrá</del> <ins>červená</ins>.</p>
+
+HTML <sub> Element
+    Element HTML <sub> definuje text ve formě indexu. 
+    Text dolního indexu se zobrazuje o půl znaku níže než normální řádek a někdy se vykresluje menším písmem. 
+    Text s indexem lze použít pro chemické vzorce, například H2O.
+    Příklad:
+        <p>Toto je <sub>spodní index</sub> textu.</p>
+
+HTML <sup> Element
+    Element HTML <sup> definuje text ve formě horního indexu. 
+    Text v horním indexu se zobrazuje o půl znaku výše než normální řádek a někdy se vykresluje menším písmem. 
+    Superscriptový text lze použít pro poznámky pod čarou.
+    Příklad:
+        <p>Toto je <sup>horní index</sup> textu.</p>
+
+
+09: Citace a citační prvky jazyka HTML
+HTML <blockquote> pro citace 
+    Element HTML <blockquote> definuje část, která je citována z jiného zdroje.
+    Prohlížeče obvykle prvky <blockquote> odsazují.
+    Příklad:
+        <p>Tady je citace z webových stránek WWF:</p>
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        Již 60 let se organizace WWF snaží pomáhat lidem a přírodě v rozkvětu. Jako přední světová organizace na ochranu přírody působí WWF v téměř 100 zemích. Na všech úrovních spolupracujeme s lidmi po celém světě na vývoji a realizaci inovativních řešení, která chrání komunity, divokou přírodu a místa, v nichž žijí.
+        </blockquote>
+
+Značka HTML <q> pro krátkou citaci
+    Značka HTML <q> definuje krátkou citaci.
+    Prohlížeče obvykle vkládají kolem citátu uvozovky.
+    Příklad:
+        <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+Značka HTML <abbr> pro akronymi
+    Značka HTML <abbr> definuje zkratku nebo akronym, například "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
+    Označení zkratek může poskytnout užitečné informace prohlížečům, překladovým systémům a vyhledávačům.
+    Rada: Pomocí globálního atributu title zobrazíte popis zkratky/akronymu, když na prvek najedete myší. 
+    Příklad:
+        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+Značka HTML <adress> pro kontaktní informace
+    Značka HTML <address> definuje kontaktní informace pro autora/vlastníka dokumentu nebo článku.
+    Kontaktními informacemi mohou být e-mailová adresa, adresa URL, fyzická adresa, telefonní číslo, kontakt na sociální média atd.
+    Text v prvku <adresa> se obvykle vykresluje kurzívou a prohlížeče vždy přidají před a za prvek <adresa> zalomení řádku.
+    Příklad:
+        <address>
+        Written by John Doe.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+        </address>
+    HTML <cite> for Work Title
+    The HTML <cite> tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).
+    Poznámka: Jméno osoby není názvem díla.
+
+HTML <cite> for Work Title
+    Značka HTML <cite> definuje název tvůrčího díla (např. knihy, básně, písně, filmu, obrazu, sochy atd.).
+    Poznámka: Jméno osoby není názvem díla.
+    Text v elementu <cite> se obvykle vykresluje kurzívou.
+    Příklad:
+        <p><cite>Křik</cite> od Edvarda Muncha. Namalován v roce 1893.</p>
+
+HTML <bdo> pro obousměrné přepisování
+    Zkratka BDO znamená Bi-Directional Override (obousměrné přepisování).
+    Značka HTML <bdo> slouží k přepsání aktuálního směru textu:
+    Příklad:
+        <bdo dir="rtl">Tento text bude zapsán zprava doleva</bdo>
+
+
+10: 

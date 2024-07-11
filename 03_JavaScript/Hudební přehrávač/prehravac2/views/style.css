@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #6c6c6c;
+    overflow: hidden;
+}
+.player {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 50px;
+}
+.controls {
+    margin-top: 10px;
+}
+button {
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #3700b3;
+}
+ul {
+    padding: 0;
+    overflow-y: auto;
+}
+li {
+    margin: 5px 0;
+}
+
+#playlist {
+    height: 100%; /* Plná výška okna */
+    width: 250px; /* Šířka sidebaru */
+    position: fixed; /* Sidebar je fixován na místě */
+    top: 0; /* Umístění na vrcholu okna */
+    left: -250px; /* Sidebar začíná mimo obrazovku vlevo */
+    background-color: #6a6a6a; /* Tmavé pozadí */
+    color: white; /* Bílé texty */
+    overflow-x: hidden; /* Skrytí horizontálního posuvníku */
+    transition: 0.5s; /* Přechod pro plynulé vysunutí/zasunutí */
+    padding-top: 10px; /* Horní odsazení pro obsah */
+}
+  
+#playlist a {
+    padding: 10px 15px; /* Odsazení uvnitř odkazů */
+    text-decoration: none; /* Žádné podtržení odkazů */
+    font-size: 25px; /* Velikost písma odkazů */
+    color: white; /* Barva textu odkazů */
+    display: block; /* Blokové zobrazení pro snadné kliknutí */
+    transition: 0.3s; /* Přechod pro změny stylu při najetí */
+}
+  
+#playlist a:hover {
+    background-color: #575757; /* Změna barvy pozadí při najetí myší */
+}
+  
+#openPlaylistBtn {
+    font-size: 30px; /* Velikost písma tlačítka */
+    cursor: pointer; /* Ukazatel kurzoru myši */
+    position: fixed; /* Fixováno na místě */
+    top: 20px; /* Vzdálenost od vrcholu okna */
+    left: 20px; /* Vzdálenost od levého okraje */
+    color: #111; /* Barva textu */
+    background-color: #ddd; /* Barva pozadí */
+    border: none; /* Žádný okraj */
+    padding: 10px; /* Vnitřní odsazení */
+}
+  
