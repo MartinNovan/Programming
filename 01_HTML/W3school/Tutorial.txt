@@ -488,4 +488,158 @@ HTML <bdo> pro obousměrné přepisování
         <bdo dir="rtl">Tento text bude zapsán zprava doleva</bdo>
 
 
-10: 
+10: HTML komentáře
+Komentáře ke zdrojovému kódu HTML můžete přidat pomocí následující syntaxe:
+<!-- Zde napište své komentáře -->
+Všimněte si, že v počáteční značce je vykřičník (!), ale v koncové značce nikoli.
+Poznámka: Prohlížeč komentáře nezobrazuje, ale mohou pomoci dokumentovat váš zdrojový kód HTML.
+
+11: Barvy HTML
+Barvy HTML se zadávají pomocí předdefinovaných názvů barev nebo pomocí hodnot RGB, HEX, HSL, RGBA nebo HSLA.
+
+12: Styly HTML - CSS
+CSS je zkratka pro kaskádové styly.
+CSS ušetří spoustu práce. Dokáže ovládat rozvržení více webových stránek najednou.
+Co je CSS?
+    Kaskádové styly (CSS) se používají k formátování rozvržení webové stránky.
+    Pomocí CSS můžete ovládat barvu, písmo, velikost textu, rozestupy mezi prvky, způsob umístění a rozložení prvků, jaké obrázky nebo barvy pozadí mají být použity, různá zobrazení pro různá zařízení a velikosti obrazovky a mnoho dalšího!
+Tip: Slovo kaskádový znamená, že styl použitý na nadřazený prvek se použije i na všechny podřízené prvky v rámci nadřazeného prvku. Pokud tedy nastavíte barvu textu těla na "modrou", všechny nadpisy, odstavce a další textové prvky v těle dostanou také stejnou barvu (pokud nezadáte něco jiného)!
+
+Použití CSS
+    CSS lze do dokumentů HTML přidat třemi způsoby:
+        Inline - pomocí atributu style uvnitř prvků HTML
+        Interně - pomocí elementu <style> v sekci <head>.
+        Externí - pomocí elementu <link>, který odkazuje na externí soubor CSS.
+    Nejběžnějším způsobem přidávání stylů CSS je uchovávání stylů v externích souborech CSS. 
+    V tomto tutoriálu však budeme používat inline a interní styly, protože je to jednodušší na ukázku a snadněji si to sami vyzkoušíte.
+
+    Inline CSS
+        Inline CSS se používá k použití jedinečného stylu na jeden prvek HTML.
+        Inline CSS používá atribut style prvku HTML.
+        Následující příklad nastavuje barvu textu elementu <h1> na modrou a barvu textu elementu <p> na červenou:
+        Příklad: 
+            <h1 style="color:blue;">Modrý nadpis</h1>
+            <p style="color:red;">Červený odstavec.</p>
+
+    Interní CSS
+        Interní CSS slouží k definici stylu pro jednu stránku HTML.
+        Interní CSS se definuje v sekci <head> stránky HTML v elementu <style>.
+        Následující příklad nastavuje barvu textu VŠECH prvků <h1> (na dané stránce) na modrou a barvu textu VŠECH prvků <p> na červenou. 
+        Kromě toho se stránka zobrazí s barvou pozadí "powderblue": 
+        Příklad:
+            <!DOCTYPE html>
+            <html>
+            <head>
+            <style>
+            body {background-color: powderblue;}
+            h1   {color: blue;}
+            p    {color: red;}
+            </style>
+            </head>
+            <body>
+            <h1>This is a heading</h1>
+            <p>This is a paragraph.</p>
+            </body>
+            </html>
+
+    Externí CSS
+        Externí soubor stylů se používá k definování stylu mnoha stránek HTML.
+        Chcete-li použít externí soubor stylů, přidejte na něj odkaz do části <head> každé stránky HTML:
+        Příklad:
+            <!DOCTYPE html>
+            <html>
+            <head>
+            <link rel="stylesheet" href="styles.css">
+            </head>
+            <body>
+            <h1>This is a heading</h1>
+            <p>This is a paragraph.</p>
+            </body>
+            </html>
+
+        Externí list stylů lze napsat v libovolném textovém editoru.
+        Soubor nesmí obsahovat žádný kód HTML a musí být uložen s příponou .css.
+        Takto vypadá soubor "styles.css":
+            "styles.css":
+            body {
+            background-color: powderblue;
+            }
+            h1 {
+            barva: modrá;
+            }
+            p {
+            barva: červená;
+            }
+Tip: Pomocí externího souboru stylů můžete změnit vzhled celého webu změnou jediného souboru!
+
+Vlastnost CSS color určuje barvu textu, která se má použít.
+Vlastnost CSS font-family definuje písmo, které má být použito.
+Vlastnost CSS font-size definuje velikost textu, která se má použít.
+Příklad:Použití vlastností CSS color, font-family a font-size:
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <style>
+    h1 {
+    color: blue;
+    font-family: verdana;
+    font-size: 300%;
+    }
+    p {
+    color: red;
+    font-family: courier;
+    font-size: 160%;
+    }
+    </style>
+    </head>
+    <body>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+    </body>
+    </html>
+
+Hranice CSS
+    Vlastnost CSS border definuje rámeček kolem prvku HTML.
+    Tip: Ohraničení můžete definovat téměř pro všechny prvky HTML.
+    Příklad:Použití vlastnosti CSS border
+        p {
+        border: 2px solid powderblue;
+        }
+
+CSS Padding
+    Vlastnost CSS padding definuje výplň (mezeru) mezi textem a rámečkem.
+    Příklad:Použití vlastností CSS border a padding
+        p {
+        border: 2px solid powderblue;
+        padding: V případě, že je to možné, je třeba provést další úpravy;
+        }
+
+CSS Margin
+    Vlastnost CSS margin definuje okraj (mezeru) mimo rámeček.
+    Příklad:Použití vlastností CSS border a margin
+        p {
+        border: Rámeček: 2px solid powderblue;
+        margin: 50px;
+        }
+Odkaz na externí CSS
+    Na externí soubory stylů lze odkazovat pomocí úplné adresy URL nebo pomocí cesty relativní k aktuální webové stránce.
+    Příklad: Tento příklad používá k odkazu na list stylů úplnou adresu URL:
+        <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+    Příklad: Tento příklad odkazuje na list stylu umístěný ve složce html na aktuálním webu: 
+        <link rel="stylesheet" href="/html/styles.css">
+    Příklad: Tento příklad odkazuje na list stylů umístěný ve stejné složce jako aktuální stránka:
+        <link rel="stylesheet" href="styles.css">
+
+Shrnutí kapitoly
+    Použití atributu stylů HTML pro inline stylování
+    Použití prvku <style> jazyka HTML k definování interního jazyka CSS
+    Použijte prvek HTML <link> pro odkaz na externí soubor CSS
+    Použití prvku HTML <head> k uložení prvků <style> a <link>
+    Použití vlastnosti color CSS pro barvy textu
+    Použití vlastnosti CSS font-family pro textová písma
+    Použití vlastnosti CSS font-size pro velikost textu
+    Použijte vlastnost CSS border pro rámečky
+    Použití vlastnosti CSS padding pro prostor uvnitř rámečku
+    Použijte vlastnost CSS margin pro prostor vně rámečku.
+
+13: 
