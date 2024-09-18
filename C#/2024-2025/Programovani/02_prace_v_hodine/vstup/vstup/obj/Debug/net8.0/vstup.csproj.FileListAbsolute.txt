@@ -1,0 +1,15 @@
+C:\Users\Mnova\OneDrive - SPS-CL\GitHub\Programovani\C#\Prg\02_prace_v_hodine\vstup\vstup\obj\Debug\net8.0\vstup.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mnova\OneDrive - SPS-CL\GitHub\Programovani\C#\Prg\02_prace_v_hodine\vstup\vstup\obj\Debug\net8.0\vstup.AssemblyInfoInputs.cache
+C:\Users\Mnova\OneDrive - SPS-CL\GitHub\Programovani\C#\Prg\02_prace_v_hodine\vstup\vstup\obj\Debug\net8.0\vstup.AssemblyInfo.cs
+C:\Users\Mnova\OneDrive - SPS-CL\GitHub\Programovani\C#\Prg\02_prace_v_hodine\vstup\vstup\obj\Debug\net8.0\vstup.csproj.CoreCompileInputs.cache
+C:\Users\Mnova\OneDrive - SPS-CL\GitHub\Programovani\C#\Prg\02_prace_v_hodine\vstup\vstup\obj\Debug\net8.0\vstup.sourcelink.json
+C:\Users\Mnova\OneDrive - SPS-CL\GitHub\Programovani\C#\Prg\02_prace_v_hodine\vstup\vstup\bin\Debug\net8.0\vstup.exe
+C:\Users\Mnova\OneDrive - SPS-CL\GitHub\Programovani\C#\Prg\02_prace_v_hodine\vstup\vstup\bin\Debug\net8.0\vstup.deps.json
+C:\Users\Mnova\OneDrive - SPS-CL\GitHub\Programovani\C#\Prg\02_prace_v_hodine\vstup\vstup\bin\Debug\net8.0\vstup.runtimeconfig.json
+C:\Users\Mnova\OneDrive - SPS-CL\GitHub\Programovani\C#\Prg\02_prace_v_hodine\vstup\vstup\bin\Debug\net8.0\vstup.dll
+C:\Users\Mnova\OneDrive - SPS-CL\GitHub\Programovani\C#\Prg\02_prace_v_hodine\vstup\vstup\bin\Debug\net8.0\vstup.pdb
+C:\Users\Mnova\OneDrive - SPS-CL\GitHub\Programovani\C#\Prg\02_prace_v_hodine\vstup\vstup\obj\Debug\net8.0\vstup.dll
+C:\Users\Mnova\OneDrive - SPS-CL\GitHub\Programovani\C#\Prg\02_prace_v_hodine\vstup\vstup\obj\Debug\net8.0\refint\vstup.dll
+C:\Users\Mnova\OneDrive - SPS-CL\GitHub\Programovani\C#\Prg\02_prace_v_hodine\vstup\vstup\obj\Debug\net8.0\vstup.pdb
+C:\Users\Mnova\OneDrive - SPS-CL\GitHub\Programovani\C#\Prg\02_prace_v_hodine\vstup\vstup\obj\Debug\net8.0\vstup.genruntimeconfig.cache
+C:\Users\Mnova\OneDrive - SPS-CL\GitHub\Programovani\C#\Prg\02_prace_v_hodine\vstup\vstup\obj\Debug\net8.0\ref\vstup.dll

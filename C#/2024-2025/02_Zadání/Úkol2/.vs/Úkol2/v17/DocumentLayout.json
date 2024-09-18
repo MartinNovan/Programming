@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mnova\\Documents\\GitHub\\2425_VAP_3D_MARTIN_NOVAN\\C#\\02_Zad\u00E1n\u00ED\\\u00DAkol2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F5927E85-70E0-40AB-BD42-F46CF588B2B6}|\u00DAkol2\\\u00DAkol2.csproj|c:\\users\\mnova\\documents\\github\\2425_vap_3d_martin_novan\\c#\\02_zad\u00E1n\u00ED\\\u00FAkol2\\\u00FAkol2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5927E85-70E0-40AB-BD42-F46CF588B2B6}|\u00DAkol2\\\u00DAkol2.csproj|solutionrelative:\u00FAkol2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mnova\\Documents\\GitHub\\2425_VAP_3D_MARTIN_NOVAN\\C#\\02_Zad\u00E1n\u00ED\\\u00DAkol2\\\u00DAkol2\\Program.cs",
+              "RelativeDocumentMoniker": "\u00DAkol2\\Program.cs",
+              "ToolTip": "C:\\Users\\Mnova\\Documents\\GitHub\\2425_VAP_3D_MARTIN_NOVAN\\C#\\02_Zad\u00E1n\u00ED\\\u00DAkol2\\\u00DAkol2\\Program.cs",
+              "RelativeToolTip": "\u00DAkol2\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T14:13:30.864Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
