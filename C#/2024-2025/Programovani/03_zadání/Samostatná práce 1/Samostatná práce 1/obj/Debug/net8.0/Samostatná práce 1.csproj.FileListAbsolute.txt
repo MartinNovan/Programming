@@ -1,0 +1,15 @@
+C:\Users\Mnova\Documents\GitHub\Programovani\C#\2024-2025\Programovani\03_zadání\Samostatná práce 1\Samostatná práce 1\bin\Debug\net8.0\Samostatná práce 1.exe
+C:\Users\Mnova\Documents\GitHub\Programovani\C#\2024-2025\Programovani\03_zadání\Samostatná práce 1\Samostatná práce 1\bin\Debug\net8.0\Samostatná práce 1.deps.json
+C:\Users\Mnova\Documents\GitHub\Programovani\C#\2024-2025\Programovani\03_zadání\Samostatná práce 1\Samostatná práce 1\bin\Debug\net8.0\Samostatná práce 1.runtimeconfig.json
+C:\Users\Mnova\Documents\GitHub\Programovani\C#\2024-2025\Programovani\03_zadání\Samostatná práce 1\Samostatná práce 1\bin\Debug\net8.0\Samostatná práce 1.dll
+C:\Users\Mnova\Documents\GitHub\Programovani\C#\2024-2025\Programovani\03_zadání\Samostatná práce 1\Samostatná práce 1\bin\Debug\net8.0\Samostatná práce 1.pdb
+C:\Users\Mnova\Documents\GitHub\Programovani\C#\2024-2025\Programovani\03_zadání\Samostatná práce 1\Samostatná práce 1\obj\Debug\net8.0\Samostatná práce 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mnova\Documents\GitHub\Programovani\C#\2024-2025\Programovani\03_zadání\Samostatná práce 1\Samostatná práce 1\obj\Debug\net8.0\Samostatná práce 1.AssemblyInfoInputs.cache
+C:\Users\Mnova\Documents\GitHub\Programovani\C#\2024-2025\Programovani\03_zadání\Samostatná práce 1\Samostatná práce 1\obj\Debug\net8.0\Samostatná práce 1.AssemblyInfo.cs
+C:\Users\Mnova\Documents\GitHub\Programovani\C#\2024-2025\Programovani\03_zadání\Samostatná práce 1\Samostatná práce 1\obj\Debug\net8.0\Samostatná práce 1.csproj.CoreCompileInputs.cache
+C:\Users\Mnova\Documents\GitHub\Programovani\C#\2024-2025\Programovani\03_zadání\Samostatná práce 1\Samostatná práce 1\obj\Debug\net8.0\Samostatná práce 1.sourcelink.json
+C:\Users\Mnova\Documents\GitHub\Programovani\C#\2024-2025\Programovani\03_zadání\Samostatná práce 1\Samostatná práce 1\obj\Debug\net8.0\Samostatná práce 1.dll
+C:\Users\Mnova\Documents\GitHub\Programovani\C#\2024-2025\Programovani\03_zadání\Samostatná práce 1\Samostatná práce 1\obj\Debug\net8.0\refint\Samostatná práce 1.dll
+C:\Users\Mnova\Documents\GitHub\Programovani\C#\2024-2025\Programovani\03_zadání\Samostatná práce 1\Samostatná práce 1\obj\Debug\net8.0\Samostatná práce 1.pdb
+C:\Users\Mnova\Documents\GitHub\Programovani\C#\2024-2025\Programovani\03_zadání\Samostatná práce 1\Samostatná práce 1\obj\Debug\net8.0\Samostatná práce 1.genruntimeconfig.cache
+C:\Users\Mnova\Documents\GitHub\Programovani\C#\2024-2025\Programovani\03_zadání\Samostatná práce 1\Samostatná práce 1\obj\Debug\net8.0\ref\Samostatná práce 1.dll
