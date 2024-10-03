@@ -163,6 +163,7 @@ namespace casino
                 if (kredit <= 0)
                 {
                     Console.WriteLine("Jste bez kreditů.");
+                    Console.ReadKey();
                     Environment.Exit(0);
                 }
                 else
@@ -208,6 +209,7 @@ namespace casino
                 if (kredit <= 0)
                 {
                     Console.WriteLine("Jste bez kreditů.");
+                    Console.ReadKey();
                     Environment.Exit(0);
                 }
                 else
@@ -245,6 +247,7 @@ namespace casino
             else if (odpoved == "3")
             {
                 Console.WriteLine("Děkujeme za hru!");
+                Console.ReadKey();
                 Environment.Exit(0);
             }
             else

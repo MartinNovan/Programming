@@ -8,19 +8,24 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Mnova\\.nuget\\packages\\": {}
+    "C:\\Users\\Mnova\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mnova\\Documents\\GitHub\\Programovani\\10_C#\\Škola\\2024-2025\\99_Programovani\\04_prace_v_hodine\\04_prace_v_hodine\\04_prace_v_hodine.csproj",
+      "projectUniqueName": "C:\\Users\\Mnova\\Documents\\GitHub\\Programovani\\99_Projekty\\Kasíno\\04_prace_v_hodine\\04_prace_v_hodine.csproj",
       "projectName": "04_prace_v_hodine",
-      "projectPath": "C:\\Users\\Mnova\\Documents\\GitHub\\Programovani\\10_C#\\Škola\\2024-2025\\99_Programovani\\04_prace_v_hodine\\04_prace_v_hodine\\04_prace_v_hodine.csproj",
+      "projectPath": "C:\\Users\\Mnova\\Documents\\GitHub\\Programovani\\99_Projekty\\Kasíno\\04_prace_v_hodine\\04_prace_v_hodine.csproj",
       "packagesPath": "C:\\Users\\Mnova\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mnova\\Documents\\GitHub\\Programovani\\10_C#\\Škola\\2024-2025\\99_Programovani\\04_prace_v_hodine\\04_prace_v_hodine\\obj\\",
+      "outputPath": "C:\\Users\\Mnova\\Documents\\GitHub\\Programovani\\99_Projekty\\Kasíno\\04_prace_v_hodine\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\Mnova\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

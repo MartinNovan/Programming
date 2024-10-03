@@ -1,0 +1,15 @@
+C:\Users\Mnova\Documents\GitHub\2425_VAP_3D_MARTIN_NOVAN\C#\04_Zadání\úkol\úkol\obj\Debug\net8.0\úkol.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mnova\Documents\GitHub\2425_VAP_3D_MARTIN_NOVAN\C#\04_Zadání\úkol\úkol\obj\Debug\net8.0\úkol.AssemblyInfoInputs.cache
+C:\Users\Mnova\Documents\GitHub\2425_VAP_3D_MARTIN_NOVAN\C#\04_Zadání\úkol\úkol\obj\Debug\net8.0\úkol.AssemblyInfo.cs
+C:\Users\Mnova\Documents\GitHub\2425_VAP_3D_MARTIN_NOVAN\C#\04_Zadání\úkol\úkol\obj\Debug\net8.0\úkol.csproj.CoreCompileInputs.cache
+C:\Users\Mnova\Documents\GitHub\2425_VAP_3D_MARTIN_NOVAN\C#\04_Zadání\úkol\úkol\obj\Debug\net8.0\úkol.sourcelink.json
+C:\Users\Mnova\Documents\GitHub\2425_VAP_3D_MARTIN_NOVAN\C#\04_Zadání\úkol\úkol\bin\Debug\net8.0\úkol.exe
+C:\Users\Mnova\Documents\GitHub\2425_VAP_3D_MARTIN_NOVAN\C#\04_Zadání\úkol\úkol\bin\Debug\net8.0\úkol.deps.json
+C:\Users\Mnova\Documents\GitHub\2425_VAP_3D_MARTIN_NOVAN\C#\04_Zadání\úkol\úkol\bin\Debug\net8.0\úkol.runtimeconfig.json
+C:\Users\Mnova\Documents\GitHub\2425_VAP_3D_MARTIN_NOVAN\C#\04_Zadání\úkol\úkol\bin\Debug\net8.0\úkol.dll
+C:\Users\Mnova\Documents\GitHub\2425_VAP_3D_MARTIN_NOVAN\C#\04_Zadání\úkol\úkol\bin\Debug\net8.0\úkol.pdb
+C:\Users\Mnova\Documents\GitHub\2425_VAP_3D_MARTIN_NOVAN\C#\04_Zadání\úkol\úkol\obj\Debug\net8.0\úkol.dll
+C:\Users\Mnova\Documents\GitHub\2425_VAP_3D_MARTIN_NOVAN\C#\04_Zadání\úkol\úkol\obj\Debug\net8.0\refint\úkol.dll
+C:\Users\Mnova\Documents\GitHub\2425_VAP_3D_MARTIN_NOVAN\C#\04_Zadání\úkol\úkol\obj\Debug\net8.0\úkol.pdb
+C:\Users\Mnova\Documents\GitHub\2425_VAP_3D_MARTIN_NOVAN\C#\04_Zadání\úkol\úkol\obj\Debug\net8.0\úkol.genruntimeconfig.cache
+C:\Users\Mnova\Documents\GitHub\2425_VAP_3D_MARTIN_NOVAN\C#\04_Zadání\úkol\úkol\obj\Debug\net8.0\ref\úkol.dll

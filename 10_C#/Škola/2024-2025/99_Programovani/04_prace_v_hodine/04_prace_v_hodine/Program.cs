@@ -141,7 +141,7 @@ namespace casino
             else if (cervenaCerna == "1" && redNumbers.Contains(viteznecislo))
             {
                 kredit += bet;
-                Console.WriteLine($"Vyhráli jste {bet*2} kreditů.");
+                Console.WriteLine($"Vyhráli jste {bet * 2} kreditů.");
                 Console.WriteLine($"Gratulujeme! Vyhráli jste! Máte: {kredit} kreditů!");
                 Console.ReadKey();
                 konecHry(kredit, poslednihra);
@@ -149,7 +149,7 @@ namespace casino
             else if (cervenaCerna == "2" && blackNumbers.Contains(viteznecislo))
             {
                 kredit += bet;
-                Console.WriteLine($"Vyhráli jste {bet*2} kreditů.");
+                Console.WriteLine($"Vyhráli jste {bet * 2} kreditů.");
                 Console.WriteLine($"Gratulujeme! Vyhráli jste! Máte: {kredit} kreditů!");
                 Console.ReadKey();
                 konecHry(kredit, poslednihra);
@@ -163,6 +163,7 @@ namespace casino
                 if (kredit <= 0)
                 {
                     Console.WriteLine("Jste bez kreditů.");
+                    Console.ReadKey();
                     Environment.Exit(0);
                 }
                 else
@@ -208,6 +209,7 @@ namespace casino
                 if (kredit <= 0)
                 {
                     Console.WriteLine("Jste bez kreditů.");
+                    Console.ReadKey();
                     Environment.Exit(0);
                 }
                 else
@@ -245,6 +247,7 @@ namespace casino
             else if (odpoved == "3")
             {
                 Console.WriteLine("Děkujeme za hru!");
+                Console.ReadKey();
                 Environment.Exit(0);
             }
             else
