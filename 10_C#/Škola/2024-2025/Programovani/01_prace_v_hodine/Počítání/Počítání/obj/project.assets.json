@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mnova\\Documents\\GitHub\\Programovani\\10_C#\\Škola\\2023-2024\\02_Ukol2\\Ukol2\\Ukol2.csproj",
-      "projectName": "Ukol2",
-      "projectPath": "C:\\Users\\Mnova\\Documents\\GitHub\\Programovani\\10_C#\\Škola\\2023-2024\\02_Ukol2\\Ukol2\\Ukol2.csproj",
+      "projectUniqueName": "C:\\Users\\Mnova\\Documents\\GitHub\\Programovani\\10_C#\\Škola\\2024-2025\\99_Programovani\\01_prace_v_hodine\\Počítání\\Počítání\\Počítání.csproj",
+      "projectName": "Počítání",
+      "projectPath": "C:\\Users\\Mnova\\Documents\\GitHub\\Programovani\\10_C#\\Škola\\2024-2025\\99_Programovani\\01_prace_v_hodine\\Počítání\\Počítání\\Počítání.csproj",
       "packagesPath": "C:\\Users\\Mnova\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mnova\\Documents\\GitHub\\Programovani\\10_C#\\Škola\\2023-2024\\02_Ukol2\\Ukol2\\obj\\",
+      "outputPath": "C:\\Users\\Mnova\\Documents\\GitHub\\Programovani\\10_C#\\Škola\\2024-2025\\99_Programovani\\01_prace_v_hodine\\Počítání\\Počítání\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
