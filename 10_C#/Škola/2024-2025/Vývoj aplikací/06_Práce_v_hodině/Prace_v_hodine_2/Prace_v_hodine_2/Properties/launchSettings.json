@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Prace_v_hodine_2": {
+      "commandName": "Project",
+      "commandLineArgs": "text3.txt"
+    }
+  }
+}
