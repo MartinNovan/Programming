@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("04_prace_v_hodine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7283bc77dd9d6700d914ef71e8d124fae0ee3cf5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e87c21b3214d9ba38abe8adbf28a78484e21fe2e")]
 [assembly: System.Reflection.AssemblyProductAttribute("04_prace_v_hodine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("04_prace_v_hodine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
