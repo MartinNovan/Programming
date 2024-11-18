@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CodebuddyPersistentProjectState">
+    <option name="promptHistory">
+      <list>
+        <option value="l. Vypište pomocí pole a vhodného cyklu prvky geometrické posloupnosti. Uživatel zadá první prvek&#10;a velikost kroku, o který bude posloupnost klesat (stoupat). Pokud bude absolutní hodnota kroku&#10;větší než 1, pak program skončí (můžete použít příkaz return; nebo&#10;Exit (o) ; b&#10;Environment.&#10;protože by při nesprávně zvoleném kroku mohly prvky nabývat vysokých hodnot,&#10;Uživatel také zadá počet prvků posloupnosti, kolik jich chce zobrazit.&#10;ał=5&#10;ał=5&#10;krok =&#10;počet = 10&#10;= 2,5 * = 1,25&#10;a4 = 1,25 * 0,5 = 0,625&#10;= 0,625 + 0,5 = 0,3125&#10;= 0,0195 * 0,5 = 0,0098&#10;2. Nechejte vypsat součet všech prvků daného pole (geometrické posloupnosti).&#10;Součet prvků geometrické posloupnosti se nazývá geometrická řada.l&#10;3. Přidejte podmínku, pokud uživatel zadá počet prvků větší či roven 5, pak se vypočítá součet&#10;prvního a pátého prvku této řady (dejte pozor na číslování pole od O).&#10;Výstup okomentujte celou větou." />
+      </list>
+    </option>
+    <option name="selectedModel" value="codebuddy:CLAUDE_3.5_SONNET_V7" />
+    <option name="ttsEnabled" value="false" />
+  </component>
+</project>
