@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #6c6c6c;
+    overflow: hidden;
+}
+.player {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 50px;
+}
+.controls {
+    margin-top: 10px;
+}
+button {
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #3700b3;
+}
+ul {
+    padding: 0;
+    overflow-y: auto;
+}
+li {
+    margin: 5px 0;
+}
+
+#playlist {
+    height: 100%; /* Full window height */
+    width: 250px; /* Sidebar width */
+    position: fixed; /* Sidebar is fixed in place */
+    top: 0; /* Positioned at the top of the window */
+    left: -250px; /* Sidebar starts off-screen to the left */
+    background-color: #6a6a6a; /* Dark background */
+    color: white; /* White text */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    transition: 0.5s; /* Smooth slide in/out transition */
+    padding-top: 10px; /* Top padding for content */
+}
+  
+#playlist a {
+    padding: 10px 15px; /* Padding inside links */
+    text-decoration: none; /* No underline for links */
+    font-size: 25px; /* Font size for links */
+    color: white; /* Link text color */
+    display: block; /* Block display for easy clicking */
+    transition: 0.3s; /* Transition for style changes on hover */
+}
+  
+#playlist a:hover {
+    background-color: #575757; /* Background color change on hover */
+}
+  
+#openPlaylistBtn {
+    font-size: 30px; /* Font size for button */
+    cursor: pointer; /* Mouse cursor */
+    position: fixed; /* Fixed in place */
+    top: 20px; /* Distance from top of window */
+    left: 20px; /* Distance from left edge */
+    color: #111; /* Text color */
+    background-color: #ddd; /* Background color */
+    border: none; /* No border */
+    padding: 10px; /* Inner padding */
+}
+  

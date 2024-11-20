@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2->3</title>
+    <meta name="description" content="Task 2->3">
+    <meta name="author" content="Martin Novan">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" style="color: gold;">Home</a>
+        <a href="image.html" style="color: gold;">Image</a>
+    </nav>
+    <h1>Martin Novan</h1>
+    <p style="text-indent: 5%;"><strong>Lorem</strong> ipsum dolor <i>sit</i> amet consectetur <sub>adipisicing</sub> elit. Sit, nulla. <sup>ullam</sup> iure libero ab quibusdam facere unde iste modi quisquam neque? Officia qui culpa quas! Quaerat omnis blanditiis nulla.</p>
+    <ol style="list-style-type: lower-roman;">
+        <li>
+            Wednesday
+        </li>
+        <li>
+            Thursday
+        </li>
+        <li>
+            Friday
+        </li>
+    </ol>
+    <ul>
+        <li>
+            May
+        </li>
+        <li>
+            June
+        </li>
+        <li>
+            July
+        </li>
+    </ul>
+    <form action="data.html">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Registration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Name</th>
+                    <td>
+                        <input type="text" name="name" id="name" placeholder="Name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Password</th>
+                    <td>
+                        <input type="password" name="password" id="password" placeholder="Password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Age</th>
+                    <td>
+                        <input type="number" name="age" id="age" placeholder="Age" max="150" min="0" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>
+                        <input type="email" name="email" id="email" placeholder="name.surname@email.com" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Student</th>
+                    <td>
+                        <input type="checkbox" name="student" id="student" value="yes">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Gender</th>
+                    <td>
+                        Female
+                        <input type="checkbox" name="sex" id="sex" value="Female">
+                        &nbsp; Male 
+                        <input type="checkbox" name="sex" id="sex" value="Male">
+                        &nbsp; Random object
+                        <input type="checkbox" name="sex" id="sex" value="Random object">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Education</th>
+                    <td>
+                        <select name="education" id="education" required>
+                            <option disabled selected>Select education</option>
+                            <option value="Elementary">Elementary School</option>
+                            <option value="High School">High School</option>
+                            <option value="University">University</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <button type="submit">Register</button>
+                    </th>
+                </tr>
+            </table>
+        </tbody>
+    </form>
+</body>
+</html>
