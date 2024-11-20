@@ -21,6 +21,7 @@ The repository is structured as follows:
 - **`11_Bootstrap/`** - Web design using the Bootstrap framework.
 - **`12_React/`** - Projects based on the React library.
 - **`13_MySQL/`** - Projects and queries utilizing the MySQL database.
+- **`...`** - More to be soon!
 - **`20_NodeJS/`** - Backend projects and scripts using Node.js.
 - **`99_Projects/`** - Various personal projects that do not fit into other categories.
 
@@ -32,7 +33,7 @@ You can explore this repository on your computer by following these steps:
 
 1. **Clone the repository** to your local machine:
     ```bash
-    git clone https://github.com/MartinNovan/Programming
+    git clone https://github.com/MartinNovan/Programming.git
     ```
 
 2. Navigate to the specific folder that interests you and start exploring!
