@@ -1,65 +1,73 @@
-# Programování
+# Programming
 
-Vítejte v mém repozitáři **Programování**! Tento repozitář obsahuje různé školní úkoly a osobní projekty, které jsem vytvořil v několika programovacích jazycích a technologiích. Projekty jsou organizovány do jednotlivých složek, přičemž každá složka je očíslována pro snadnou navigaci. Výjimkou je složka **Projekty**, která obsahuje různé osobní projekty.
-
----
-
-## 📂 Struktura repozitáře
-
-Repozitář je strukturován následujícím způsobem:
-
-- **`01_HTML/`** - Webové úkoly a cvičení v HTML.
-- **`02_CSS/`** - Stylování webových stránek pomocí CSS.
-- **`03_JavaScript/`** - Dynamické webové funkce pomocí JavaScriptu.
-- **`04_SQL/`** - SQL dotazy, databázové projekty a cvičení.
-- **`05_Python/`** - Projekty, skripty a algoritmy napsané v Pythonu.
-- **`06_Java/`** - Úkoly a projekty v Javě.
-- **`07_PHP/`** - Projekty v PHP pro server-side webový vývoj.
-- **`08_C/`** - Programy a cvičení v jazyce C.
-- **`09_C++/`** - Projekty a aplikace v jazyce C++.
-- **`10_C#/`** - Úkoly a projekty v C#, včetně vývoje v .NET.
-- **`11_Bootstrap/`** - Webový design pomocí frameworku Bootstrap.
-- **`12_React/`** - Projekty založené na knihovně React.
-- **`13_MySQL/`** - Projekty a dotazy využívající databázi MySQL.
-- **`14_NodeJS/`** - Backend projekty a skripty využívající Node.js.
-- **`99_Projekty/`** - Různé osobní projekty, které nepatří do ostatních kategorií.
+Welcome to my **Programming** repository! This repository contains various school assignments and personal projects that I have created in several programming languages and technologies. The projects are organized into individual folders, each numbered for easy navigation. The exception is the **Projects** folder, which contains various personal projects.
 
 ---
 
-## 🚀 Jak používat
+## 📂 Repository Structure
 
-Prozkoumat tento repozitář na svém počítači můžete podle těchto kroků:
+The repository is structured as follows:
 
-1. **Naklonujte repozitář** na svůj lokální počítač:
+- **`01_HTML/`** - Web assignments and exercises in HTML.
+- **`02_CSS/`** - Styling web pages using CSS.
+- **`03_JavaScript/`** - Dynamic web functionalities using JavaScript.
+- **`04_SQL/`** - SQL queries, database projects, and exercises.
+- **`05_Python/`** - Projects, scripts, and algorithms written in Python.
+- **`06_Java/`** - Assignments and projects in Java.
+- **`07_PHP/`** - Projects in PHP for server-side web development.
+- **`08_C/`** - Programs and exercises in the C language.
+- **`09_C++/`** - Projects and applications in C++.
+- **`10_C#/`** - Assignments and projects in C#, including development in .NET.
+- **`11_Bootstrap/`** - Web design using the Bootstrap framework.
+- **`12_React/`** - Projects based on the React library.
+- **`13_MySQL/`** - Projects and queries utilizing the MySQL database.
+- **`20_NodeJS/`** - Backend projects and scripts using Node.js.
+- **`99_Projects/`** - Various personal projects that do not fit into other categories.
+
+---
+
+## 🚀 How to Use
+
+You can explore this repository on your computer by following these steps:
+
+1. **Clone the repository** to your local machine:
     ```bash
-    git clone https://github.com/yourusername/programovani.git
+    git clone https://github.com/MartinNovan/Programming
     ```
 
-2. Přejděte do konkrétní složky, která vás zajímá, a začněte prozkoumávat!
+2. Navigate to the specific folder that interests you and start exploring!
 
 ---
 
-## 📝 O tomto repozitáři
+## 📝 About This Repository
 
-Tento repozitář slouží jako osobní portfolio pro mou cestu učením se různých programovacích jazyků a webových technologií. Obsahuje:
+This repository serves as a personal portfolio for my journey in learning various programming languages and web technologies. It contains:
 
-- **Školní úkoly**: Projekty a cvičení z mých kurzů.
-- **Osobní projekty**: Projekty, které jsem inicioval sám a které ukazují moje dovednosti a kreativitu.
-
----
-
-## 🤝 Přispívání
-
-Příspěvky jsou vítány! Pokud chcete přispět do některého z projektů, klidně forknete tento repozitář a pošlete pull request.
+- **School Assignments**: Projects and exercises from my courses.
+- **Personal Projects**: Projects that I initiated myself, showcasing my skills and creativity.
 
 ---
 
-## 📄 Licence
+## 🤝 Contributing
 
-Tento repozitář je určen pro osobní použití a učení. Pokud chcete nějaký obsah použít, ujistěte se, že dodržujete příslušné licence a správně uvedete autora.
+Contributions are welcome! If you would like to contribute to any of the projects, feel free to fork this repository and submit a pull request.
 
 ---
 
-## 📬 Kontakt
+## 📄 License
 
-Pokud máte jakékoliv otázky nebo návrhy, neváhejte mě kontaktovat prostřednictvím GitHubu nebo e-mailu.
+This repository is intended for personal use and learning. If you wish to use any content, please ensure that you comply with the relevant licenses and properly credit the author.
+
+---
+
+## 📬 Contact
+
+If you have any questions or suggestions, feel free to contact me via GitHub or email.
+
+---
+
+## 🌟 Additional Information
+
+- **Technologies Used**: This repository showcases a variety of technologies, including but not limited to HTML, CSS, JavaScript, Python, Java, C#, and more.
+- **Learning Goals**: The projects reflect my learning goals, including mastering programming concepts, improving problem-solving skills, and gaining practical experience in software development.
+- **Future Plans**: I plan to continue adding more projects and assignments as I learn new technologies and improve my skills.

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" href="icon.png">
+    <meta name="description" content="Project Calculator.">
+    <meta name="author" content="Martin Novan">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<script src="app.js" defer></script>
+<body class="bd">
+    <div class="body">
+        <div>
+            <input class="inputfield" type="text" autocomplete="off" autocapitalize="off" placeholder="Enter mathematical example" value=""/>
+        </div>
+        <div>
+            <input class="outputfield" type="text" autocomplete="off" autocapitalize="off" placeholder="Result" value=""/>
+        </div>
+        <div class="lines">
+            <button class="buttons" type="button" onclick="toInput(this.innerHTML)">%</button>
+            <button class="buttons" type="button" onclick="toInput(this.innerHTML)">π</button>
+            <button class="buttons" type="button" onclick="toInput(this.innerHTML)">(</button>
+            <button class="buttons" type="button" onclick="toInput(this.innerHTML)">)</button>
+            <button class="buttons" type="button" onclick="toInput(this.innerHTML)">C</button>
+            <button class="buttons" type="button" onclick="toInput(this.innerHTML)">DEL</button>
+        </div>
+        <div class="lines">
+            <button class="buttons" type="button" onclick="toInput(this.innerHTML)">10ˣ</button>
+            <button class="buttons" type="button" onclick="toInput(this.innerHTML)">x²</button>
+            <button class="buttons" type="button" onclick="toInput(this.innerHTML)">7</button>
+            <button class="buttons" type="button" onclick="toInput(this.innerHTML)">8</button>
+            <button class="buttons" type="button" onclick="toInput(this.innerHTML)">9</button>
+            <button class="buttons" type="button" onclick="toInput(this.innerHTML)">×</button>
+        </div>
+        <div class="lines">
+            <button class="buttons" type="button" onclick="toInput(this.innerHTML)">SIN</button>
+            <button class="buttons" type="button" onclick="toInput(this.innerHTML)">xʸ</button>
+            <button class="buttons" type="button" onclick="toInput(this.innerHTML)">4</button>
+            <button class="buttons" type="button" onclick="toInput(this.innerHTML)">5</button>
+            <button class="buttons" type="button" onclick="toInput(this.innerHTML)">6</button>
+            <button class="buttons" type="button" onclick="toInput(this.innerHTML)">-</button>
+        </div>
+        <div class="lines">
+            <button class="buttons" type="button" onclick="toInput(this.innerHTML)">COS</button>
+            <button class="buttons" type="button" onclick="toInput(this.innerHTML)">|x|</button>
+            <button class="buttons" type="button" onclick="toInput(this.innerHTML)">1</button>
+            <button class="buttons" type="button" onclick="toInput(this.innerHTML)">2</button>
+            <button class="buttons" type="button" onclick="toInput(this.innerHTML)">3</button>
+            <button class="buttons" type="button" onclick="toInput(this.innerHTML)">+</button>
+        </div>
+        <div class="lines">
+            <button class="buttons" type="button" onclick="toInput(this.innerHTML)">TAN</button>
+            <button class="buttons" type="button" onclick="toInput(this.innerHTML)">√x</button>
+            <button class="buttons" type="button" onclick="toInput(this.innerHTML)">.</button>
+            <button class="buttons" type="button" onclick="toInput(this.innerHTML)">0</button>
+            <button class="buttons" type="button" onclick="toInput(this.innerHTML)">=</button>
+            <button class="buttons" type="button" onclick="toInput(this.innerHTML)">/</button>
+        </div>
+    </div>
+</body>
+
+</html> 
