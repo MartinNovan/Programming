@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form</h1>
+    <form action="/save-user" method="post">
+        <input id="FirstName" type="text" name="firstName" placeholder="First Name" required>
+        <input id="LastName" type="text" name="lastName" placeholder="Last Name" required>
+        <input type="submit" value="Submit">
+    </form>
+    <input type="button" value="Submit via JS" onclick="submitViaJS()">
+    <script>
+        async function submitViaJS() {
+            try {
+                let response = await fetch("/save-user", {
+                    method: "post",
+                    headers: {
+                        "content-type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        firstName: document.getElementById("FirstName").value,
+                        lastName: document.getElementById("LastName").value
+                    })
+                });
+
+                if (response.ok) {
+                    document.getElementById("FirstName").value = '';
+                    document.getElementById("LastName").value = '';
+                    console.log("Data submitted successfully.");
+                } else {
+                    console.error("Failed to submit data.");
+                }
+            } catch (error) {
+                console.error("Error:", error);
+            }
+        }
+    </script>
+    <input type="button" value="Show Users" onclick="showUsers()">
+    <script>
+        async function showUsers() {
+            try {
+                const response = await fetch("/show-all-users");
+                const data = await response.json();
+                    if (data.length > 0) {
+                        let allUsers = "";
+                        data.forEach(user => {
+                            allUsers += `${user.firstName} ${user.lastName}\n`;
+                        });
+                        alert("All users in the database:\n" + allUsers);
+                    } else {
+                        alert("No users in the database.");
+                    }
+            } catch (error) {
+                console.error(error);
+            }
+        }
+    </script>
+</body>
+</html>
