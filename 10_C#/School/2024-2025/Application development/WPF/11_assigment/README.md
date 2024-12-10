@@ -111,8 +111,6 @@ namespace _11_assigment
 
 - **Namespaces**: 
   - `System.Collections.ObjectModel`: This namespace is used for the `ObservableCollection<T>` class, which provides a dynamic data collection that provides notifications when items get added, removed, or when the whole list is refreshed.
-  - `System.Linq`: This namespace is included to use LINQ (Language Integrated Query) methods such as `Sum()` and `Count()`, which allow for concise and readable data manipulation.
-  - `System.Windows`: This namespace is essential for WPF applications, providing classes for the user interface.
 
 - **`public ObservableCollection<Product> Products { get; set; }`**: 
   - This property holds the collection of products. It is of type `ObservableCollection<Product>`, which means that any changes to this collection (like adding or removing products) will automatically update the UI due to data binding.
