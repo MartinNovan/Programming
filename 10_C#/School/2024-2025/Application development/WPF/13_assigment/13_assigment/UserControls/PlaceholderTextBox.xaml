@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="_13_assigment.UserControls.PlaceholderTextBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="200"  x:Name="MyControl" Background="White">
+    <UserControl.Resources>
+        <Style TargetType="Border" >
+            <Setter Property="CornerRadius" Value="{Binding CornerRadius, ElementName=MyControl}"/>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <TextBlock Margin="2,0,0,0" Name="PLaceholderElement" Text="{Binding Placeholder, ElementName=MyControl}"/>
+        <TextBox BorderThickness="0" Background="Transparent" TextChanged="TextBox_TextChanged" Text="{Binding Text, ElementName=MyControl, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+    </Grid>
+</UserControl>
