@@ -1,0 +1,25 @@
+﻿<Window x:Class="_14_assigment.Windows.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:userControl="clr-namespace:_14_assigment.UserControls"
+        mc:Ignorable="d"
+        Title="Register" Height="400" Width="350">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="Registration:" FontSize="20" />
+        <userControl:PlaceHolderTextBox x:Name="UsernameEntry" Grid.Row="1" Margin="5, 15, 5, 5" Placeholder="Username"/>
+        <userControl:PlaceHolderTextBox x:Name="EmailEntry" Grid.Row="2" Margin="5" Placeholder="Email"/>
+        <userControl:PlaceHolderTextBox x:Name="PasswordEntry" Grid.Row="3" Margin="5" Placeholder="Password"/>
+        <userControl:PlaceHolderTextBox x:Name="PasswordConfirmationEntry" Grid.Row="4" Margin="5" Placeholder="Confirm Password"/>
+        <Button Grid.Row="5" Content="Register" Click="ButtonBase_OnClick" HorizontalAlignment="Center" />
+    </Grid>
+</Window>
