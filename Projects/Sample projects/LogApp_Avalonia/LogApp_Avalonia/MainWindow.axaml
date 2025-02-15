@@ -1,0 +1,38 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LogApp_Avalonia"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="LogApp_Avalonia.MainWindow"
+        Title="LogApp - Avalonia"
+        Icon="Resources/counter.png"
+        x:DataType="local:MainWindow">
+    <Grid ColumnDefinitions="Auto, *" Margin="5">
+        <Grid Grid.Column="0" RowDefinitions="Auto, Auto, Auto">
+            <StackPanel Grid.Row="0">
+                <TextBlock Text="Enter name:"/>
+                <TextBox x:Name="NameBox" Margin="10" Watermark="Name..." Width="250" MaxLength="30" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Grid.Row="1">
+                <TextBlock Text="Enter message"/>
+                <TextBox x:Name="NoteBox" Margin="10" Watermark="Message..." Width="300" Height="200" VerticalContentAlignment="Top" TextWrapping="Wrap" MaxLength="120"/>
+            </StackPanel>
+            <Button Grid.Row="2" Content="Confirm" Click="ButtonBase_OnClick"/>
+        </Grid>
+        <StackPanel Grid.Column="1">
+            <TextBlock x:Name="Counter" Text="Celkem: 0"></TextBlock>
+            <ListBox ItemsSource="{Binding Logs}" Margin="5">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid ColumnDefinitions="Auto, *, Auto" >
+                            <TextBlock Grid.Column="0" Text="{Binding Name}" Margin="2,0" FontWeight="Bold" TextWrapping="Wrap" MaxWidth="120"/>
+                            <TextBlock Grid.Column="1" Text="{Binding Message}" Margin="4,0" TextWrapping="Wrap"/>
+                            <TextBlock Grid.Column="2" Text="{Binding Time}" Margin="2,0"/>
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+    </Grid>
+</Window>

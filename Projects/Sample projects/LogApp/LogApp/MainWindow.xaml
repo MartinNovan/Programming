@@ -1,0 +1,59 @@
+﻿<Window x:Class="LogApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="LogApp" Height="450" Width="800"
+        Icon="/Resources/counter.png">
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0" Margin="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0">
+                <TextBlock Text="Enter name:" Background="Transparent"/>
+                <TextBox x:Name="NameBox" MaxLength="30"/>
+            </StackPanel>
+            <StackPanel Grid.Row="1">
+                <TextBlock Text="Enter message:" Background="Transparent" />
+                <TextBox x:Name="NoteBox" Width="500" Height="200" VerticalContentAlignment="Top" MaxLength="120" TextWrapping="Wrap"/>
+            </StackPanel>
+            <Button Grid.Row="2" Content="Confirm" Click="ButtonBase_OnClick" Margin="10"/>
+        </Grid>
+        <StackPanel Grid.Column="1">
+            <TextBlock x:Name="Counter" Text="Celkem: 0"/>
+            <ListView MaxHeight="800" Background="Transparent" ItemsSource="{Binding Logs}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Name">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock TextWrapping="Wrap" Text="{Binding Name}" />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Message" Width="140">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock TextWrapping="Wrap" Text="{Binding Message}" />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Time" Width="140">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock TextWrapping="Wrap" Text="{Binding Time}" />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </StackPanel>
+    </Grid>
+</Window>
