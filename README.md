@@ -11,19 +11,14 @@ The repository is structured as follows:
 - **`01_HTML/`** - Web assignments and exercises in HTML.
 - **`02_CSS/`** - Styling web pages using CSS.
 - **`03_JavaScript/`** - Dynamic web functionalities using JavaScript.
-- **`04_SQL/`** - SQL queries, database projects, and exercises.
-- **`05_Python/`** - Projects, scripts, and algorithms written in Python.
-- **`06_Java/`** - Assignments and projects in Java.
-- **`07_PHP/`** - Projects in PHP for server-side web development.
-- **`08_C/`** - Programs and exercises in the C language.
-- **`09_C++/`** - Projects and applications in C++.
-- **`10_C#/`** - Assignments and projects in C#, including development in .NET.
-- **`11_Bootstrap/`** - Web design using the Bootstrap framework.
-- **`12_React/`** - Projects based on the React library.
-- **`13_MySQL/`** - Projects and queries utilizing the MySQL database.
-- **`...`** - More to be soon!
-- **`20_NodeJS/`** - Backend projects and scripts using Node.js.
-- **`99_Projects/`** - Various personal projects that do not fit into other categories.
+- **`04_NodeJS/`** - Backend projects and scripts using Node.js.
+- **`05_MySQL/`** - SQL queries, database projects, and exercises.
+- **`06_PHP/`** - Projects in PHP for server-side web development.
+- **`07_Python/`** - Projects, scripts, and algorithms written in Python.
+- **`08_Java/`** - Assignments and projects in Java.
+- **`09_C#/`** - Assignments and projects in C#, including development in .NET.
+- **`10_C++/`** - Projects and applications in C++.
+- **`_Projects/`** - Various personal projects that do not fit into other categories.
 
 ---
 
@@ -46,12 +41,6 @@ This repository serves as a personal portfolio for my journey in learning variou
 
 - **School Assignments**: Projects and exercises from my courses.
 - **Personal Projects**: Projects that I initiated myself, showcasing my skills and creativity.
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! If you would like to contribute to any of the projects, feel free to fork this repository and submit a pull request.
 
 ---
 
