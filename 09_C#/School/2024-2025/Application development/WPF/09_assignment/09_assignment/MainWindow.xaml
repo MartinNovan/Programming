@@ -1,0 +1,33 @@
+﻿<Window x:Class="_09_assignment.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/> 
+            <RowDefinition Height="*"/>    
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Viewbox Grid.Row="0"> <TextBlock Text="App with stretching image" HorizontalAlignment="Center" VerticalAlignment="Center"/></Viewbox>
+        <Image x:Name="Image" Source="/Resources/downladed_image.png" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="None"/>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <RadioButton Grid.Column="0" GroupName="ImageMode" VerticalAlignment="Center" Checked="UniformButtonOnChecked"/>
+            <TextBlock Text="Uniform" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <RadioButton Grid.Column="1" GroupName="ImageMode" VerticalAlignment="Center" Checked="UniformToFillButtonOnChecked"/>
+            <TextBlock Text="UniformToFill" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <RadioButton Grid.Column="2" GroupName="ImageMode" VerticalAlignment="Center" Checked="FillButtonOnChecked"/>
+            <TextBlock Text="Fill" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <RadioButton Grid.Column="3" GroupName="ImageMode" VerticalAlignment="Center" IsChecked="True" Checked="NoneButtonOnChecked"/>
+            <TextBlock Text="None" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Grid>
+    </Grid>
+</Window>

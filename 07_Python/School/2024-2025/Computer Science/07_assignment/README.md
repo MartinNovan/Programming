@@ -24,7 +24,7 @@ This script uses the built-in `hashlib`, `os`, and `sys` libraries, so there are
 1. Clone this repository to your local machine:
    ```bash
    git clone https://github.com/MartinNovan/Programming.git
-   cd Programming/05_Python/School/2024-2025/Computer Science/07_assigment/
+   cd Programming/05_Python/School/2024-2025/Computer Science/07_assignment/
    ```
 
 2. Make sure you have the necessary permissions to run the script.
