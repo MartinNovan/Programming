@@ -13,11 +13,11 @@ public class SongModel : INotifyPropertyChanged
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
 
-    private string? _title;
+    private readonly string? _title;
     public string? Title
     {
         get => _title;
-        set
+        init
         {
             if (_title != value)
             {
@@ -27,11 +27,11 @@ public class SongModel : INotifyPropertyChanged
         }
     }
 
-    private string? _artist;
+    private readonly string? _artist;
     public string? Artist
     {
         get => _artist;
-        set
+        init
         {
             if (_artist != value)
             {
@@ -41,11 +41,11 @@ public class SongModel : INotifyPropertyChanged
         }
     }
 
-    private string? _album;
+    private readonly string? _album;
     public string? Album
     {
         get => _album;
-        set
+        init
         {
             if (_album != value)
             {
@@ -55,11 +55,11 @@ public class SongModel : INotifyPropertyChanged
         }
     }
 
-    private string? _path;
+    private readonly string? _path;
     public string? Path
     {
         get => _path;
-        set
+        init
         {
             if (_path != value)
             {
@@ -69,11 +69,11 @@ public class SongModel : INotifyPropertyChanged
         }
     }
 
-    private string? _duration;
+    private readonly string? _duration;
     public string? Duration
     {
         get => _duration;
-        set
+        init
         {
             if (_duration != value)
             {

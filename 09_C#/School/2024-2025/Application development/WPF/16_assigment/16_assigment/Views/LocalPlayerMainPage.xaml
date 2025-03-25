@@ -4,7 +4,6 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:models="clr-namespace:_16_assigment.Models"
-      xmlns:local="clr-namespace:_16_assigment.Views"
       mc:Ignorable="d"
       Title="LocalPlayerPage">
       <Grid>
@@ -23,14 +22,20 @@
                       <RowDefinition Height="Auto"/>
                       <RowDefinition Height="*"/>
                   </Grid.RowDefinitions>
-                  <StackPanel Grid.Row="0">
-                      <Button Click="HomeButtonOnClick" Content="&#xEA8A;" FontFamily="{DynamicResource SymbolThemeFontFamily}" Margin="5" Width="50" Height="50" VerticalAlignment="Top" FontSize="25"/>
-                      <Button Click="SearchButtonOnClick" Content="&#xF78B;" FontFamily="{DynamicResource SymbolThemeFontFamily}" Margin="5" Width="50" Height="50" VerticalAlignment="Top" FontSize="25"/>
-                      <Button Click="CreateAlbumButtonOnClick" Content="+" Margin="5" Width="50" Height="50" VerticalAlignment="Top" FontSize="30" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                  <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                      <Button Click="HomeButtonOnClick" Content="&#xEA8A;" FontFamily="{DynamicResource SymbolThemeFontFamily}" Margin="5" Width="50" Height="50" VerticalAlignment="Top" FontSize="25" ToolTip="Show all songs"/>
+                      <Button Click="SearchButtonOnClick" Content="&#xF78B;" FontFamily="{DynamicResource SymbolThemeFontFamily}" Margin="5" Width="50" Height="50" VerticalAlignment="Top" FontSize="25" ToolTip="Add search for song"/>
+                      <Button Click="CreateAlbumButtonOnClick" Content="+" Margin="5" Width="50" Height="50" VerticalAlignment="Top" FontSize="30" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" ToolTip="Add new album"/>
                       <TextBlock Background="{DynamicResource ControlFillColorDefaultBrush}" Height="2"/>
                   </StackPanel>
-                  <StackPanel x:Name="AlbumsPanel" Grid.Row="1">
-
+                  <StackPanel Grid.Row="1">
+                    <ListView x:Name="AlbumsPanel" Margin="5" SelectionMode="Single" SelectionChanged="AlbumsPanel_OnSelectionChanged" ItemsSource="{Binding PlayLists}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Image Source="/Resources/Images/music-logo.jpg" ToolTip="{Binding}" MaxWidth="50" MaxHeight="50"/>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
                   </StackPanel>
 
               </Grid>
@@ -45,7 +50,7 @@
                   Grid.Row="1"
                   x:Name="PlayerListView"
                   SelectionMode="Single"
-                  MouseDoubleClick="PlayerListView_OnSelected"
+                  Margin="5"
                   >
                   <ListView.ItemTemplate>
                       <DataTemplate DataType="{x:Type models:SongModel}">
@@ -64,26 +69,6 @@
                               <TextBlock Grid.Column="2" MaxWidth="150" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="8,4" Text="{Binding Artist}" />
                               <TextBlock Grid.Column="3" MaxWidth="150" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="8,4" Text="{Binding Album}" />
                               <TextBlock Grid.Column="4" MaxWidth="150" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="8,4" Text="{Binding Duration}" />
-                              <Button Grid.Column="5" Content="❤️">
-                                  <Button.ContextMenu>
-                                      <ContextMenu>
-                                          <!-- Bind each Playlist to the ContextMenu -->
-                                          <MenuItem Header="Add to Playlist"
-                                                    DisplayMemberPath="Name"
-                                                    CommandParameter="{Binding}">
-                                              <MenuItem.ItemTemplate>
-                                                  <DataTemplate>
-                                                      <ListView ItemsSource="Playlists">
-                                                      </ListView>
-                                                  </DataTemplate>
-                                              </MenuItem.ItemTemplate>
-                                          </MenuItem>
-                                          <MenuItem Header="Create New Playlist">
-
-                                          </MenuItem>
-                                      </ContextMenu>
-                                  </Button.ContextMenu>
-                              </Button>
                           </Grid>
                       </DataTemplate>
                   </ListView.ItemTemplate>
@@ -94,7 +79,16 @@
                   <RowDefinition Height="Auto"/>
                   <RowDefinition Height="*"/>
               </Grid.RowDefinitions>
-              <Label Grid.Row="0" Content="Playlist" FontWeight="Bold" FontSize="20" Margin="15, 5"/>
+              <Grid Grid.Row="0">
+                  <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="*"/>
+                      <ColumnDefinition Width="Auto"/>
+                      <ColumnDefinition Width="Auto"/>
+                  </Grid.ColumnDefinitions>
+                  <TextBlock Grid.Column="0" x:Name="PlaylistName" Foreground="{DynamicResource TextFillColorPrimaryBrush}" Text="All songs" FontWeight="Bold" FontSize="20" Margin="15, 5" />
+                <Button Grid.Column="1" x:Name="AddSongToPlaylistButton" Foreground="{DynamicResource TextFillColorPrimaryBrush}" Click="AddSongToPlaylistButton_OnClick" Content="+" FontSize="20" Visibility="Collapsed" Margin="5" Height="40" Width="40"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" ToolTip="Add songs to playlist"/>
+                <Button Grid.Column="2" x:Name="RemovePlaylist" Foreground="{DynamicResource TextFillColorPrimaryBrush}" Click="RemovePlaylist_OnClick" FontFamily="{DynamicResource SymbolThemeFontFamily}" Content="&#xE74D;" Visibility="Collapsed" Margin="5" Height="40" Width="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" ToolTip="Remove this album"/>
+              </Grid>
               <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Auto" MaxWidth="280">
                   <Grid>
                       <Grid.RowDefinitions>
@@ -122,19 +116,18 @@
                   <TextBlock MaxWidth="100" TextWrapping="Wrap" x:Name="SongName" VerticalAlignment="Center" Foreground="{DynamicResource TextFillColorPrimaryBrush}"/>
                   <TextBlock MaxWidth="100" TextWrapping="Wrap" x:Name="Authors" VerticalAlignment="Center" Foreground="{DynamicResource TextFillColorSecondaryBrush}"/>
               </StackPanel>
-              <Button x:Name="LikedButton" Grid.Column="2" Content="&#xEB52;" FontFamily="{DynamicResource SymbolThemeFontFamily}" Margin="5" Background="Transparent"/> <!--prázdné srdce"&#xEB51;"-->
               <StackPanel Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center">
                   <MediaElement Name="MediaElement" LoadedBehavior="Manual" />
                   <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
-                      <Button x:Name="RandomPlay" Click="RandomPlay_OnClick" Content="&#xE8B1;" FontFamily="{DynamicResource SymbolThemeFontFamily}" Margin="5,0" Background="Transparent" />
-                      <Button x:Name="SkipBack" Click="SkipBack_OnClick" Content="&#xF8AC;" FontFamily="{DynamicResource SymbolThemeFontFamily}" Margin="5,0" Background="Transparent" />
-                      <Button x:Name="PlayButton" Click="PlayButton_OnClick" Content="&#xF8AE;" FontFamily="{DynamicResource SymbolThemeFontFamily}" Margin="5,0" Background="Transparent" />
-                      <Button x:Name="SkipFoward" Click="SkipFoward_OnClick" Content="&#xF8AD;" FontFamily="{DynamicResource SymbolThemeFontFamily}" Margin="5,0" Background="Transparent" />
-                      <Button x:Name="Repeat" Click="Repeat_OnClick" Content="&#xE8EE;" FontFamily="{DynamicResource SymbolThemeFontFamily}" Margin="5,0" Background="{DynamicResource AccentFillColorSelectedTextBackgroundBrush}" />
+                      <Button x:Name="RandomPlay" Click="RandomPlay_OnClick" Content="&#xE8B1;" FontFamily="{DynamicResource SymbolThemeFontFamily}" Margin="5,0" Background="Transparent" ToolTip="Random play"/>
+                      <Button Click="SkipBack_OnClick" Content="&#xF8AC;" FontFamily="{DynamicResource SymbolThemeFontFamily}" Margin="5,0" Background="Transparent" ToolTip="Skip back"/>
+                      <Button x:Name="PlayButton" Click="PlayButton_OnClick" Content="&#xF8AE;" FontFamily="{DynamicResource SymbolThemeFontFamily}" Margin="5,0" Background="Transparent" ToolTip="Pause/Resume"/>
+                      <Button Click="SkipForward_OnClick" Content="&#xF8AD;" FontFamily="{DynamicResource SymbolThemeFontFamily}" Margin="5,0" Background="Transparent" ToolTip="Skip forward"/>
+                      <Button x:Name="Repeat" Click="Repeat_OnClick" Content="&#xE8EE;" FontFamily="{DynamicResource SymbolThemeFontFamily}" Margin="5,0" Background="{DynamicResource AccentFillColorSelectedTextBackgroundBrush}" ToolTip="Repeat mode"/>
                   </StackPanel>
                   <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
                       <TextBlock  Foreground="{DynamicResource TextFillColorPrimaryBrush}" Name="TimeLabel" Text="0:00" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                      <Slider ValueChanged="ProgressSlider_ValueChanged" Foreground="{DynamicResource TextFillColorPrimaryBrush}" Name="ProgressSlider" Width="300" Margin="5,0" />
+                      <Slider x:Name="ProgressBar" ValueChanged="ProgressSlider_ValueChanged" Foreground="{DynamicResource TextFillColorPrimaryBrush}" Width="300" Margin="5,0" />
                       <TextBlock  Foreground="{DynamicResource TextFillColorPrimaryBrush}" Name="FinishTimeLabel" Text="0:00" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                   </StackPanel>
               </StackPanel>
