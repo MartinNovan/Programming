@@ -11,9 +11,11 @@ import random
 
 
 def _generate_shape(spec: dict) -> list:
+    """Generates a ship shape based on the specification"""
     shape_type = random.choice(spec['shapes'])
     size = spec['size']
 
+    # Generate different shapes based on type
     if shape_type == 'I':
         return [(i, 0) for i in range(size)]
     elif shape_type == 'L':
@@ -26,7 +28,11 @@ def _generate_shape(spec: dict) -> list:
             [(0,1), (1,1), (1,0), (2,0)]
         ])
     elif shape_type == 'TT':
-        return [(0,0), (1,0), (2,0), (3,0), (2,1), (2,2)]
+        # Correct TT shape:
+        #  **
+        # ****
+        return [(1,0), (2,0),  # Top row
+                (0,1), (1,1), (2,1), (3,1)]  # Bottom row
     return []
 
 
@@ -44,6 +50,7 @@ def _generate_l_shape() -> list:
 
 
 def _rotate_shape(shape: list, degrees: int, x: int, y: int) -> list:
+    """Rotates a shape around a given point (x,y) by specified degrees"""
     rotated = []
     for dx, dy in shape:
         if degrees == 90:
@@ -59,12 +66,12 @@ def _rotate_shape(shape: list, degrees: int, x: int, y: int) -> list:
 class BoardSetup:
     def __init__(self, rows: int, cols: int, ships_dict: dict[int, int]):
         """
-        Initializes the game board with specified dimensions and ship configuration.
-        
-        Parameters:
-        rows (int): Number of rows in the game board
-        cols (int): Number of columns in the game board
-        ships_dict (dict): Dictionary mapping ship IDs to their quantities
+        Initializes game board with:
+        - Dimensions (rows, cols)
+        - Ship configuration (ships_dict)
+        - Empty board (0 = water, 1-7 = ship IDs)
+        - Ship specifications including size and possible shapes
+        Provides foundation for ship placement and board management.
         """
         # Store basic board configuration
         self.rows = rows
@@ -84,6 +91,7 @@ class BoardSetup:
             6: {'size': 4, 'shapes': ['Z']},  # Z-shaped ship
             7: {'size': 6, 'shapes': ['TT']}  # Special TT-shaped ship
         }
+        self.placement_attempts = 0
 
     def get_board(self) -> list[list[int]]:
         """
@@ -105,45 +113,66 @@ class BoardSetup:
         return self.board[y][x]
 
     def place_ships(self) -> list[list[int]]:
+        """
+        Places ships on the board using a sophisticated algorithm:
+        1. Sorts ships by size (largest first)
+        2. Checks if there's enough space
+        3. Attempts to place each ship
+        4. If placement fails, resets and retries
+        Implements intelligent ship placement with collision avoidance.
+        """
         ship_ids = sorted(self.ships_dict.keys(), key=lambda x: self.ship_specs[x]['size'], reverse=True)
+        
+        # Check if there is enough space for all ships
+        total_required = sum(self.ship_specs[ship_id]['size'] * count for ship_id, count in self.ships_dict.items())
+        if total_required > self.rows * self.cols:
+            raise ValueError("Not enough space to place all ships")
+        
+        # Start placement from different positions
+        start_positions = [(x, y) for x in range(self.cols) for y in range(self.rows)]
+        random.shuffle(start_positions)
         
         for ship_id in ship_ids:
             count = self.ships_dict[ship_id]
             for _ in range(count):
-                if not self._try_place_ship(ship_id):
-                    raise ValueError(f"Cannot place ship {ship_id}")
+                if not self._try_place_ship(ship_id, start_positions):
+                    # Reset board and try again if placement fails
+                    self.reset_board()
+                    return self.place_ships()
         return self.board
 
-    def _try_place_ship(self, ship_id: int) -> bool:
+    def _try_place_ship(self, ship_id: int, start_positions: list) -> bool:
+        """Improved placement with better position selection"""
         spec = self.ship_specs[ship_id]
         max_attempts = 69000  # Increased number of attempts
         
-        for _ in range(max_attempts):
-            # Generate all possible variations for L shape
-            if ship_id == 5:
-                shape = _generate_l_shape()
-            else:
-                shape = _generate_shape(spec)
-                
-            if not shape:
-                continue
-                
-            x = random.randint(0, self.cols - 1)
-            y = random.randint(0, self.rows - 1)
-            orientation = random.choice([0, 90, 180, 270])
+        # Special handling for L-shaped ships
+        if ship_id == 5:
+            shape = _generate_l_shape()
+        else:
+            shape = _generate_shape(spec)
             
-            cells = _rotate_shape(shape, orientation, x, y)
-            if cells and self._is_valid_placement(cells):
-                for cx, cy in cells:
-                    self.board[cy][cx] = ship_id
-                return True
+        if not shape:
+            return False
+            
+        # Try positions in shuffled order
+        for x, y in start_positions:
+                for orientation in [0, 90, 180, 270]:
+                    cells = _rotate_shape(shape, orientation, x, y)
+                    if cells and self._is_valid_placement(cells):
+                        # Place the ship if valid position found
+                        for cx, cy in cells:
+                            self.board[cy][cx] = ship_id
+                        return True
         return False
 
     def _is_valid_placement(self, cells: list) -> bool:
-        """Checks if ship placement is valid by verifying:
-        1. All cells are within board boundaries
-        2. No collisions with existing ships
-        3. No direct adjacency with other ships
+        """
+        Validates ship placement by checking:
+        1. Boundary conditions
+        2. Collision with existing ships
+        3. Adjacency to other ships
+        Ensures proper spacing and valid ship positions.
         """
         for x, y in cells:
             # Boundary check
@@ -175,6 +204,7 @@ class BoardSetup:
         Returns:
         dict: Contains counts of empty and occupied spaces
         """
+        # Count occupied spaces (non-zero values)
         occupied = sum(cell != 0 for row in self.board for cell in row)
         return {
             "empty_spaces": self.rows * self.cols - occupied,
