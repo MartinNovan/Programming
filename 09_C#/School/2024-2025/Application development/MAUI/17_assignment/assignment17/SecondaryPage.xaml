@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_17_assignment.SecondaryPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <Label Text="Projekt Endeaxim-3" FontSize="Large" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+            <Label Text="Upgrade tiskárny ender 3 na moderní 3d tirkárnu, více zjistíte zde: https://github.com/MartinNovan/Endeaxim-3" FontSize="Small"/>
+            <Button Text="Zpět" Clicked="Button_OnClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
