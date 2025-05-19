@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:assignment18="clr-namespace:assignment18"
+             x:Class="assignment18.MainPage"
+             x:Name="MyPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <assignment18:BoolToStatusConverter x:Key="BoolToStatusConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <CollectionView ItemsSource="{Binding Tasks}" Margin="5">
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Frame Margin="10" BorderColor="Gray" CornerRadius="10" Background="#333">
+                    <StackLayout >
+                        <Label Text="{Binding Title}" FontAttributes="Bold" />
+                        <Label Text="{Binding Description}" FontSize="Small" />
+                        <HorizontalStackLayout Spacing="-110">
+                            <Switch IsToggled="{Binding IsCompleted, Mode=TwoWay}"/>
+                            <Label Background="#333" VerticalTextAlignment="Center"
+                                   Text="{Binding IsCompleted, Converter={StaticResource BoolToStatusConverter}}"
+                                   TextColor="DarkGreen" />
+                        </HorizontalStackLayout>
+                        <Button Text="Odstranit"
+                                Command="{Binding DeleteCommand, Source={x:Reference MyPage}}"
+                                CommandParameter="{Binding .}" />
+                    </StackLayout>
+                </Frame>
+            </DataTemplate>
+       </CollectionView.ItemTemplate>
+    </CollectionView>
+</ContentPage>
