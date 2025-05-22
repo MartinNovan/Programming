@@ -124,31 +124,31 @@ private void Button_OnClicked(object? sender, EventArgs e)
 
 ---
 
-## Persistence dat pomocí SQLite
+## Data Persistence Using SQLite
 
-Aplikace byla rozšířena o trvalé ukládání úkolů pomocí databáze SQLite a knihovny `sqlite-net-pcl`. Díky tomu zůstávají úkoly zachovány i po ukončení aplikace.
+The application has been extended to support persistent storage of tasks using an SQLite database and the `sqlite-net-pcl` library. Thanks to this, tasks are preserved even after the application is closed.
 
-### Hlavní kroky a změny:
+### Main Steps and Changes:
 
-1. **Přidání třídy `TaskItemDatabase`**
-   - Třída zajišťuje komunikaci s databází SQLite.
-   - V konstruktoru se vytváří tabulka pro úkoly pomocí `_database.CreateTable<TaskItem>()`.
+1. **Adding the `TaskItemDatabase` Class**
+   - This class handles communication with the SQLite database.
+   - In the constructor, a table for tasks is created using `_database.CreateTable<TaskItem>()`.
 
-2. **CRUD operace**
-   - **Získání všech úkolů:** Pomocí `_database.Table<TaskItem>().ToList()` se načtou všechny úkoly z databáze.
-   - **Vložení nového úkolu:** Pokud má úkol `Id == 0`, vloží se do databáze přes `_database.Insert(task)`.
-   - **Aktualizace úkolu:** Pokud úkol již existuje, aktualizuje se pomocí `_database.Update(task)`.
-   - **Smazání úkolu:** Odstranění konkrétního úkolu přes `_database.Delete(task)`.
-   - **Smazání všech úkolů:** Všechny úkoly se smažou pomocí `_database.DeleteAll<TaskItem>()`.
+2. **CRUD Operations**
+   - **Retrieving all tasks:** All tasks are loaded from the database using `_database.Table<TaskItem>().ToList()`.
+   - **Inserting a new task:** If a task has `Id == 0`, it is inserted into the database via `_database.Insert(task)`.
+   - **Updating a task:** If the task already exists, it is updated using `_database.Update(task)`.
+   - **Deleting a task:** A specific task is removed using `_database.Delete(task)`.
+   - **Deleting all tasks:** All tasks are deleted using `_database.DeleteAll<TaskItem>()`.
 
-3. **Úprava modelu `TaskItem`**
-   - Přidán atribut `Id` označený `[PrimaryKey, AutoIncrement]` pro automatické generování primárního klíče v databázi.
+3. **Modifying the `TaskItem` Model**
+   - An `Id` property marked with `[PrimaryKey, AutoIncrement]` was added for automatic primary key generation in the database.
 
-4. **Vytvoření třídy `TaskItemCollection`**
-   - Dědí z kolekce a rozšiřuje ji o logiku ukládání do databáze.
-   - Při přidání/odebrání úkolu se změny ihned promítnou do databáze.
-   - Při startu aplikace se kolekce naplní úkoly načtenými z databáze.
+4. **Creating the `TaskItemCollection` Class**
+   - Inherits from a collection and extends it with logic for saving to the database.
+   - When a task is added/removed, changes are immediately reflected in the database.
+   - When the application starts, the collection is populated with tasks loaded from the database.
 
-5. **Úprava repository a ViewModelu**
-   - Kolekce úkolů v `TaskRepository` je nyní typu `TaskItemCollection` místo `ObservableCollection`.
-   - Všechny změny v kolekci jsou automaticky synchronizovány s databází.
+5. **Modifying the Repository and ViewModel**
+   - The task collection in `TaskRepository` is now of type `TaskItemCollection` instead of `ObservableCollection`.
+   - All changes in the collection are automatically synchronized with the database.
