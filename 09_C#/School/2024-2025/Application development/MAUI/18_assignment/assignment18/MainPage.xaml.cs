@@ -7,7 +7,7 @@ namespace assignment18;
 
 public partial class MainPage : ContentPage
 {
-    public ObservableCollection<TaskItem> Tasks => TaskRepository.Tasks;
+    public TaskItemCollection Tasks => TaskRepository.Tasks;
     public Command DeleteCommand { get; set; }
     public MainPage()
     {

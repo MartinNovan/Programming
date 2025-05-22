@@ -121,3 +121,34 @@ private void Button_OnClicked(object? sender, EventArgs e)
 - **MainPage.xaml / .cs**: Displays and manages the task collection.
 - **NewTaskPage.xaml / .cs**: Form for adding new tasks.
 - **AppShell.xaml**: Defines navigation between pages.
+
+---
+
+## Persistence dat pomocí SQLite
+
+Aplikace byla rozšířena o trvalé ukládání úkolů pomocí databáze SQLite a knihovny `sqlite-net-pcl`. Díky tomu zůstávají úkoly zachovány i po ukončení aplikace.
+
+### Hlavní kroky a změny:
+
+1. **Přidání třídy `TaskItemDatabase`**
+   - Třída zajišťuje komunikaci s databází SQLite.
+   - V konstruktoru se vytváří tabulka pro úkoly pomocí `_database.CreateTable<TaskItem>()`.
+
+2. **CRUD operace**
+   - **Získání všech úkolů:** Pomocí `_database.Table<TaskItem>().ToList()` se načtou všechny úkoly z databáze.
+   - **Vložení nového úkolu:** Pokud má úkol `Id == 0`, vloží se do databáze přes `_database.Insert(task)`.
+   - **Aktualizace úkolu:** Pokud úkol již existuje, aktualizuje se pomocí `_database.Update(task)`.
+   - **Smazání úkolu:** Odstranění konkrétního úkolu přes `_database.Delete(task)`.
+   - **Smazání všech úkolů:** Všechny úkoly se smažou pomocí `_database.DeleteAll<TaskItem>()`.
+
+3. **Úprava modelu `TaskItem`**
+   - Přidán atribut `Id` označený `[PrimaryKey, AutoIncrement]` pro automatické generování primárního klíče v databázi.
+
+4. **Vytvoření třídy `TaskItemCollection`**
+   - Dědí z kolekce a rozšiřuje ji o logiku ukládání do databáze.
+   - Při přidání/odebrání úkolu se změny ihned promítnou do databáze.
+   - Při startu aplikace se kolekce naplní úkoly načtenými z databáze.
+
+5. **Úprava repository a ViewModelu**
+   - Kolekce úkolů v `TaskRepository` je nyní typu `TaskItemCollection` místo `ObservableCollection`.
+   - Všechny změny v kolekci jsou automaticky synchronizovány s databází.
