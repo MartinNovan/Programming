@@ -17,8 +17,10 @@ The repository is structured as follows:
 - **`07_Python/`** - Projects, scripts, and algorithms written in Python.
 - **`08_Java/`** - Assignments and projects in Java.
 - **`09_C#/`** - Assignments and projects in C#, including development in .NET.
-- **`10_C++/`** - Projects and applications in C++.
-- **`_Projects/`** - Various personal projects that do not fit into other categories.
+- **`10_C/`** - Projects and applications in C.
+- **`11_C++/`** - Projects and applications in C++.
+- **`12_Rust/`** - Projects and applications in Rust.
+- **`Projects/`** - Various personal projects that do not fit into other categories.
 
 ---
 
@@ -58,6 +60,6 @@ If you have any questions or suggestions, feel free to contact me via GitHub or 
 
 ## 🌟 Additional Information
 
-- **Technologies Used**: This repository showcases a variety of technologies, including but not limited to HTML, CSS, JavaScript, Python, Java, C#, and more.
+- **Technologies Used**: This repository showcases a variety of technologies, including but not limited to HTML, CSS, JavaScript, Python, Java, C#, C, C++, Rust, and more.
 - **Learning Goals**: The projects reflect my learning goals, including mastering programming concepts, improving problem-solving skills, and gaining practical experience in software development.
 - **Future Plans**: I plan to continue adding more projects and assignments as I learn new technologies and improve my skills.
